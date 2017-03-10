@@ -1,7 +1,7 @@
 ---
 title:  Sitecore scheduled tasks not running
 date:   2016-07-25 16:57:54
-tags: sitecore
+categories: sitecore
 ---
 Today i've been trying to understand why I couldn't configure a scheduled task to run a Sitecore Powershell script. I found many useful articles which explained the configuration options for Sitecore scheduled tasks.
 

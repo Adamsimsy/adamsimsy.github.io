@@ -1,7 +1,7 @@
 ---
 title:  Getting started with Sitecore - What resources should you use?
 date:   2016-07-25 16:57:54
-tags: sitecore
+categories: sitecore
 ---
 In this post which i'll keep updated is a list of key resources you should always have to hand as a Sitecore developer. Whether you are starting out or a seasoned Sitecore developer/architect.
 

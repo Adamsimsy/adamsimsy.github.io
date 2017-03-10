@@ -1,7 +1,7 @@
 ---
 title:  Starting my Sitecore blog
 date:   2016-05-14 00:16:20
-tags: sitecore
+categories: sitecore
 ---
 Hello Sitecore world!!! 
 
