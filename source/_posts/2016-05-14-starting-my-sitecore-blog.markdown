@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Starting my Sitecore blog"
+title:  Starting my Sitecore blog
 date:   2016-05-14 00:16:20
-categories: sitecore
+tags: sitecore
 ---
 Hello Sitecore world!!! 
 

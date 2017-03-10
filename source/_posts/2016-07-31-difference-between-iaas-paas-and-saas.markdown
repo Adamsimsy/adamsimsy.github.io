@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Differences between IaaS, PaaS and SaaS"
+title:  Differences between IaaS, PaaS and SaaS
 date:   2016-07-31 16:57:54
-categories: cloud
+tags: cloud
 ---
 Over the last few years working as an SA i've helped to architect solutions that use more and more cloud services and very often see the following terms used:
 
