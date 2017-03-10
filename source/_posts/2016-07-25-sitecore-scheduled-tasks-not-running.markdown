@@ -11,7 +11,7 @@ I played around with these settings and still couldn't get my scheduled task to 
 
 I needed to check that the database agent was being initialised correctly, where you should see the following towards the start of the Sitecore logs:
 
-{% codeblock log %}
+{% codeblock %}
 9988 17:25:38 INFO  Scheduler - Adding agents
 9988 17:25:38 INFO  Scheduler - Adding agent: Sitecore.Tasks.UrlAgent (interval: 00:15:00)
 9988 17:25:38 INFO  Scheduler - Adding agent: Sitecore.Tasks.TaskDatabaseAgent (interval: 00:02:00)
@@ -23,7 +23,7 @@ I found that i had added "Include/zzz/InitializeSpeedBooster.config" to speed up
 
 I opened this config and spotted the issue straight away. To fix the issue but using the other speed boosting configuration, you can comment out the following line:
 
-{% codeblock xml %}
+{% codeblock %}
 <processor type="Sitecore.Pipelines.Loader.InitializeScheduler, Sitecore.Kernel">
 	<patch:delete />
 </processor>
