@@ -67,5 +67,5 @@ theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type:
+deploy: git@github.com:Adamsimsy/adamsimsy.github.io.git
+  type: git
