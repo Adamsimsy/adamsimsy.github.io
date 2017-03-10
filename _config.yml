@@ -9,6 +9,11 @@ description: A blog focused on how Sitecore customers, developers & the communit
 author: Adamsimsy
 language: EN
 timezone: UTC
+#Material theme
+avatar: /images/avatar.jpg  # the avatar image in the sidebar
+favicon: /images/favicon.ico # the favicon
+keywords:
+  - Sitecore
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -63,7 +68,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: material-flow
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -75,9 +80,52 @@ deploy:
   branch: master
   message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
+# rss
 feed:
   type: atom
   path: atom.xml
   limit: 20
   hub:
   content:
+
+# auto prefixer
+autoprefixer:
+  exclude:
+    - '*.min.css'
+  browsers:
+    - 'last 2 versions'
+
+# Generator json content
+jsonContent:
+  meta: false
+  keywords: false
+  pages:
+    title: true
+    slug: false
+    date: false
+    updated: false
+    comments: false
+    path: false
+    link: false
+    permalink: true
+    excerpt: false
+    keywords: false
+    text: true
+    raw: false
+    content: false
+  posts:
+    title: true
+    slug: false
+    date: false
+    updated: false
+    comments: false
+    path: false
+    link: false
+    permalink: true
+    excerpt: false
+    keywords: false
+    text: true
+    raw: false
+    content: false
+    categories: false
+    tags: false
