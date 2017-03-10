@@ -15,7 +15,7 @@ I needed to check that the database agent was being initialised correctly, where
 9988 17:25:38 INFO  Scheduler - Adding agents
 9988 17:25:38 INFO  Scheduler - Adding agent: Sitecore.Tasks.UrlAgent (interval: 00:15:00)
 9988 17:25:38 INFO  Scheduler - Adding agent: Sitecore.Tasks.TaskDatabaseAgent (interval: 00:02:00)
-{% codeblock %}
+{% endcodeblock %}
 
 So i then looked back through my logs to see when this was last logged. I then looked at the tail of the file to see which configuration file was added or changed.
 
@@ -27,7 +27,7 @@ I opened this config and spotted the issue straight away. To fix the issue but u
 <processor type="Sitecore.Pipelines.Loader.InitializeScheduler, Sitecore.Kernel">
 	<patch:delete />
 </processor>
-{% codeblock %}
+{% endcodeblock %}
 
 This resolved my issue and now all Sitecore scheduled tasks and scheduled Powershell scripts now run, as per the schedule configuration.
 
