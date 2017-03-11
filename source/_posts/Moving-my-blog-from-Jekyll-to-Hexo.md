@@ -1,11 +1,13 @@
 ---
 title: Moving my blog from Jekyll to Hexo
-categories: General
 tags:
-- jekyll
-- hexo
-- github
+  - jekyll
+  - hexo
+  - github
+categories: General
+date: 2017-03-11 19:08:32
 ---
+
 For some time I have been meaning to begin blogging about my Sitecore and development experiences to share with the community. 
 
 Around a year ago i created a new blog using [GitHub pages and Jekyll](https://jekyllrb.com/docs/github-pages/) which was straight forward. I made a few posts but as it was a really simple and not attractive blog, I was never keen to share my posts or write new ones. The reason it was so simple was because there are limitations with Jekyll themes and plugins running on GitHub pages, which GitHub renders on the fly.
