@@ -2,6 +2,8 @@
 title:  No more wrappers with Sitecore fake db
 date:   2016-05-24 00:17:54
 categories: sitecore
+tags:
+- testing
 ---
 Just reviewed and started using this module after being frustrated with abstractions and getting buried in wrappers. No matter how good you are at managing your solution, you'll end up with a mess of wrappers to be able to unit test every facet of Sitecore.
 

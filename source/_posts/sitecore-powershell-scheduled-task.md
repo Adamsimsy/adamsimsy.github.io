@@ -2,6 +2,8 @@
 title:  Sitecore Powershell scheduled task
 date:   2016-05-18 00:18:45
 categories: sitecore
+tags:
+- tasks
 ---
 Recently i've been working a lot with Sitecore Powershell which is a fantastic module developed by...
 
