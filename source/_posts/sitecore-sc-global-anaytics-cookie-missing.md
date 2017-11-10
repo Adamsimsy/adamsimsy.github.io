@@ -1,6 +1,6 @@
 ---
 title:  Sitecore SC_ANALYTICS_GLOBAL_COOKIE missing
-date:   2017-11-11 14:00:00
+date:   2017-11-11 14:00:01
 categories: sitecore
 tags:
 - xdb
@@ -24,4 +24,4 @@ There are a number of reasons why this might not appear:
 
 ![Set Sitcore global cookie example](/images/sitecore-sc-global-anaytics-cookie-missing-2.jpg)
 
-The final one being a tricky one to hunt down, so i thought i'd share the steps i went through to find the solution. I hope this saves someone else some time.
+The final one being a tricky one to hunt down, so i thought i'd share the steps i went through to find the solution. I hope this saves someone else some time. 
