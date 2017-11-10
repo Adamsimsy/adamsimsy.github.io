@@ -16,7 +16,7 @@ The cookie you expect to see is:
 
 There are a number of reasons why this might not appear:
 
-[1] Sitecore analytics has been disabled using the setting ""
+[1] Sitecore analytics has been disabled using the setting "Analytics.Enabled" or "Xdb.Enabled" depending on your version of Sitecore
 [2] The "@Html.Sitecore().VisitorIdentification()" razor view helper is missing
 [3] Your license is for CMS only and not xDB
 [4] Failure to connect to MongoDB
