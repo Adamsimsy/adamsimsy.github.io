@@ -12,6 +12,8 @@ For some time I have been meaning to begin blogging about my Sitecore and develo
 
 Around a year ago i created a new blog using [GitHub pages and Jekyll](https://jekyllrb.com/docs/github-pages/) which was straight forward. I made a few posts but as it was a really simple and not attractive blog, I was never keen to share my posts or write new ones. The reason it was so simple was because there are limitations with Jekyll themes and plugins running on GitHub pages, which GitHub renders on the fly.
 
+<!-- more -->
+
 ![My old Hexo blog](/images/Moving-my-blog-from-Jekyll-to-Hexo_oldblog.jpg)
 
 So again, recently I decided I wanted to start blogging a lot more to engage with the Sitecore community. So, first thing first...I wanted to find a blogging engine that i was happy with. I considered the following and did some research into what others in the community were using:

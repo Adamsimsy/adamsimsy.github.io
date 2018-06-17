@@ -10,6 +10,8 @@ This is an uncommon issue and one that is easy to overlook if you've recently de
 
 But you find that the persistant cookie "SC_ANALYTICS_GLOBAL_COOKIE" which Sitecore uses to track contacts across sessions in the xDB is missing. This causes a number of issues, but the main one being is that if a visitor returns to the website, a new contact is created as Sitecore cannot relate the two sessions using this unique visitor id.
 
+<!-- more -->
+
 The cookie you expect to see is:
 
 ![Sitcore global cookie](/images/sitecore-sc-global-anaytics-cookie-missing-1.jpg)

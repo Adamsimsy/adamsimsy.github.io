@@ -12,6 +12,8 @@ One notable detailed article can be found on the [Sitecore Community Docs](http:
 
 I played around with these settings and still couldn't get my scheduled task to run. I then read a post on [stack overflow](http://stackoverflow.com/questions/13506278/sitecore-schedule-task-not-running#new-answer) which gave me a good pointer.
 
+<!-- more -->
+
 I needed to check that the database agent was being initialised correctly, where you should see the following towards the start of the Sitecore logs:
 
 {% codeblock %}

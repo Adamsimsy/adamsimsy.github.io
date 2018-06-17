@@ -13,6 +13,8 @@ Over the last few years working as an SA i've helped to architect solutions that
 
 Just from looking at the names of each service types, most technical people can work out what is provided by each. But unfortunately sometimes people are unsure of the differences, paticularly where IaaS ends and PaaS starts.
 
+<!-- more -->
+
 So i thought i'd put together a simple illustration which may help someone looking for a quick overview of the differences.
 
 IaaS | PaaS | SaaS

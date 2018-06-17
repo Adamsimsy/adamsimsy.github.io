@@ -7,6 +7,8 @@ tags:
 ---
 I came across this issue recently after some changes were made to Sitecore layouts and placeholder names. A change was made to switch a template called 'General page' to use a new layout container which we had taken from Habitat. We switched from 'ArticleAsideRight.cshtml' to '1 Column.cshtml'.
 
+<!-- more -->
+
 After changing, the developer working with me found that the authored content was missing for the 'General page' so he changed the placeholder on '1 Column.cshtml':
 
 {% codeblock %}

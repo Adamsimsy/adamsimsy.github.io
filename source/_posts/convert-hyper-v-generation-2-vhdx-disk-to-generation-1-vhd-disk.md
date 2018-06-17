@@ -7,11 +7,12 @@ tags:
 - vhd
 - virtualization
 ---
-If you ever find you need to downgrade a Windows hyper-v machine from generation 2 .vhdx to a generation .vhd, this unfortunately doesn't work by simply using the Hyper-V Manager edit and convert utility as below.
+If you ever find you need to downgrade a Windows hyper-v machine from generation 2 .vhdx to a generation .vhd, this unfortunately doesn't work by simply using the Hyper-V Manager edit and convert utility.
 
 ![Convert hyper-v disk](/images/hyper-v/image1-convert-to-vhd.png)
 
 What you'll get is a blinking cursor when you attached the converted .vhd disk to a new generation 1 VM.
+<!-- more -->
 
 You can try attaching a Windows installation ISO, booting into the recovery options, using command prompt and "bootrec /fixmbr" tools but this won't work because the drive is still configured to boot using GPT/UEFI instead of MBR. 
 

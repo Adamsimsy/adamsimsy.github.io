@@ -11,6 +11,8 @@ Anyway from a few various sources I found some examples of how to reset the pass
 
 If you ever find your account locked out, try running the following.
 
+<!-- more -->
+
 {% codeblock %}
 UPDATE [aspnet_Membership] 
 SET 
