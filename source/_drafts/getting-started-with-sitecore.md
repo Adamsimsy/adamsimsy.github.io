@@ -5,6 +5,7 @@ categories: sitecore
 ---
 In this post which i'll keep updated is a list of key resources you should always have to hand as a Sitecore developer. Whether you are starting out or a seasoned Sitecore developer/architect.
 
+
 [Sitecore offical documentation]()
 [Sitecore community documentation](http://sitecore-community.github.io/docs/) - Often there are gaps in the Sitecore documentation and this is a great 
 

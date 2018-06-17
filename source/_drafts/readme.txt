@@ -1,1 +1,1 @@
-Folder for draft posts.
+Folder for draft posts. 
