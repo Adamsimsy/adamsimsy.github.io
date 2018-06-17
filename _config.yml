@@ -42,6 +42,7 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+disqus_shortname: adamsimsy-com
 highlight:
   enable: true
   line_number: true
