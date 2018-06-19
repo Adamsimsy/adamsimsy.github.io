@@ -86,9 +86,9 @@ Some key points from this step and what we had agreed on above:
 * __DEV environment__
   * Where teams or squads would carryout acceptance testing before changes are merged into the main source control trunk and continuously delivered into our pipeline
 * __Build server__
-  * Would continue to unit tests and code analysis on code commit fail a deployment with any regression
+  * Would continue to execute unit tests and code analysis on code commit. Failing a build or deployment with any regression
 * __The Pipeline__
-  * Our pipeline shrunk down to INT, TST and PRD and continuous deployed to INT features are merged into the main trunk
+  * Our pipeline shrunk down to INT, TST and PRD and continuous deploying features merged into the main trunk to INT
 * __INT environment__
   * All automated tests would run here after a deployment
 * __TST environment__
@@ -111,7 +111,7 @@ This enabled us to then consolidated where validation and testing would be execu
 
 We're now busy putting this into action and changing our deployment pipeline, infrastructure as code environment provisioning and development practices.
 
-It might not be possible to do this in every organization as there may be strict governance, control gates and specialized teams dedicated to testing in certain environments. Banks for example you'd have a hard time making any radical changes to established processes and controls in the release process. But you could focus on other factors to enable to deliver more quickly such as trunk based development, componentization and feature flags. More on this hopefully in future blog posts.
+It might not be possible to do this in every organization as there may be strict governance, control gates and specialized teams dedicated to testing in certain environments. Banks for example you'd have a hard time making any radical changes to established processes and controls in the release process. But you could focus on other factors to enable faster delivery such as trunk based development, componentization and feature flags. More on this hopefully in future blog posts.
 
 But if you feel there is an opportunity to consolidate the number environments, with your team start with the questions __"what validation or testing do we need to get a release into production?"__ and __"can the testing be grouped and executed on a smaller number of environments?"__ which might be provisioned differently.
 
