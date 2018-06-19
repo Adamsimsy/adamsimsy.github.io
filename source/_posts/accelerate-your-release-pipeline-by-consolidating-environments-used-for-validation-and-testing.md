@@ -9,6 +9,7 @@ tags:
 - continuous deployment 
 - release pipeline
 - infrastructure
+thumbnail: /images/testing-workshop/testing-workshop-open-graph.jpg
 ---
 Today, all agile teams are trying to deliver their features into production faster to keep up with rapidly changing customer and business demands. 
 
