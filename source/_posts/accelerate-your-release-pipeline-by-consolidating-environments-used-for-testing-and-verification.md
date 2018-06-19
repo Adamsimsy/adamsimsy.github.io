@@ -1,6 +1,6 @@
 ---
 title: >-
-  Accelerate your release pipeline by consolidating environments used for validation and testing
+  Accelerate your release pipeline by consolidating environments used for testing and verification
 date: 2018-06-19 08:27:56
 categories: deployment
 tags: 
@@ -30,9 +30,9 @@ Each environment taking time to deploy, execute testing, management of data and 
 
 An organisation I have been working with has been investing in optimizing their release pipeline. Striving to be able to deploy multiple times a day and reduce the feature lead time into production.
 
-We felt that we could consolidate the environments in the release pipeline to accelerate our delivery. The problem was that it was difficult to agree which environments could be removed. Especially with multiple teams, responsible for multiple systems, which required environment alignment for validation of system integrations.
+We felt that we could consolidate the environments in the release pipeline to accelerate our delivery. The problem was that it was difficult to agree which environments could be removed. Especially with multiple teams, responsible for multiple systems, which required environment alignment for verification of system integrations.
 
-So we started with the question… __"What validation or testing do we need to get a release into production?"__
+So we started with the question… __"What testing or verification do we need to get a release into production?"__
 
 To answer this question, we decided to run a workshop with 3 key steps:
 
@@ -44,13 +44,13 @@ We started the workshop by placing cards up on a wall and I'll take you through 
 
 ![Testing workshop approach](/images/testing-workshop/testing-workshop-approach.jpg)
 
-### Workshop step 1 - List all the types of testing and validation
+### Workshop step 1 - List all the types of testing and verification
 
 The first step began by equipping everyone with everyone's favorite agile tools.
 
 ![Testing workshop equiqment](/images/testing-workshop/testing-workshop-equipment.jpg)
 
-Then each of us took 5 minutes to write all the types of validation or testing we felt was required to get a feature from development to production. We then stuck all of these on a wall.
+Then each of us took 5 minutes to write all the types of testing or verification we felt was required to get a feature from development to production. We then stuck all of these on a wall.
 
 ![Testing workshop step 1](/images/testing-workshop/testing-workshop-step1.jpg)
 
@@ -76,7 +76,7 @@ The consensus was, UAT was acceptance testing of a feature on an integrated envi
 
 ### Workshop step 3 - Organizing the testing groups
 
-After lunch, we met again to begin the final step of the workshop, organizing our validation and testing into a logical order and where we felt they could be executed together.
+After lunch, we met again to begin the final step of the workshop, organizing our testing and verification into a logical order and where we felt they could be executed together.
 
 We tried to avoid naming these groups at first but naturally found we had some of the original environments in our delivery pipeline. The result can be seen below.
 
@@ -93,7 +93,7 @@ Some key points from this step and what we had agreed on above:
 * __INT environment__
   * All automated tests would run here after a deployment
 * __TST environment__
-  * Where the bulk of our testing would happen including any current manual validation. With the aim to automate moving forward.
+  * Where the bulk of our testing would happen including any current manual verification. With the aim to automate moving forward.
   * The environment would be an exact replica of production with automated roll back of non-sensitive data, removing the need for a pre-production environment
 * __PRD environment__
   * continuous health checks, synthetics and monitoring. Where possible any types of automated testing executed on earlier environments
@@ -104,7 +104,7 @@ What was key to this step and enabled us to consolidate environments, was challe
 
 From running through this exercise in 3 discrete steps or sessions, as a team we were able to gain a consensus on the types of testing we required to get features into production. This was an important step for us as some people had slightly different but valid ideas about what a type of testing would validate, who would be responsible to execute it, what data was required and where it could run.
 
-This enabled us to then consolidated where validation and testing would be executed to move from 6 to 4 environments (not including Build) which would have significant savings in:
+This enabled us to then consolidated where testing and verification would be executed to move from 6 to 4 environments (not including Build) which would have significant savings in:
 
 * Time to release
 * Effort and cost to provision and manage the environments
@@ -114,7 +114,7 @@ We're now busy putting this into action and changing our deployment pipeline, in
 
 It might not be possible to do this in every organization as there may be strict governance, control gates and specialized teams dedicated to testing in certain environments. Banks for example you'd have a hard time making any radical changes to established processes and controls in the release process. But you could focus on other factors to enable faster delivery such as trunk based development, componentization and feature flags. More on this hopefully in future blog posts.
 
-But if you feel there is an opportunity to consolidate the number environments, with your team start with the questions __"what validation or testing do we need to get a release into production?"__ and __"can the testing be grouped and executed on a smaller number of environments?"__ which might be provisioned differently.
+But if you feel there is an opportunity to consolidate the number environments, with your team start with the questions __"what testing or verification do we need to get a release into production?"__ and __"can the testing be grouped and executed on a smaller number of environments?"__ which might be provisioned differently.
 
 
 
