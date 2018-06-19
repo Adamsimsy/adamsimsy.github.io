@@ -1,7 +1,7 @@
 ---
 title: >-
   Accelerate your release pipeline by consolidating environments used for validation and testing
-date: 2018-06-18 08:27:56
+date: 2018-06-19 08:27:56
 categories: deployment
 tags: 
 - continuous delivery 
@@ -29,7 +29,7 @@ Each environment taking time to deploy, execute testing, management of data and 
 
 An organisation I have been working with has been investing in optimizing their release pipeline. Striving to be able to deploy multiple times a day and reduce the feature lead time into production.
 
-We felt that we could consolidate the environments in the release pipeline to accelerate our delivery. The problem was that it was difficult to agree which environments could be removed.
+We felt that we could consolidate the environments in the release pipeline to accelerate our delivery. The problem was that it was difficult to agree which environments could be removed. Especially with multiple teams, responsible for multiple systems, which required environment alignment for validation of system integrations.
 
 So we started with the question… __"What validation or testing do we need to get a release into production?"__
 
@@ -101,7 +101,7 @@ What was key to this step and enabled us to consolidate environments, was challe
 	
 ## Conclusion
 
-From running through this exercise in 3 discreet steps or sessions, as a team we were able to gain a consensus on the types of testing we required to get features into production. This was an important step for us as some people had slightly different but valid ideas about what a type of testing would validate, who would be responsible to execute it, what data was required and where it could run.
+From running through this exercise in 3 discrete steps or sessions, as a team we were able to gain a consensus on the types of testing we required to get features into production. This was an important step for us as some people had slightly different but valid ideas about what a type of testing would validate, who would be responsible to execute it, what data was required and where it could run.
 
 This enabled us to then consolidated where validation and testing would be executed to move from 6 to 4 environments (not including Build) which would have significant savings in:
 
@@ -113,7 +113,7 @@ We're now busy putting this into action and changing our deployment pipeline, in
 
 It might not be possible to do this in every organization as there may be strict governance, control gates and specialized teams dedicated to testing in certain environments. Banks for example you'd have a hard time making any radical changes to established processes and controls in the release process. But you could focus on other factors to enable to deliver more quickly such as trunk based development, componentization and feature flags. More on this hopefully in future blog posts.
 
-But if you feel there is an opportunity to consolidate the number environments, with your team start with the questions __"what validation or testing do we need to get a release into production?"__ and __"can the testing be grouped and executed on a smaller number of environments?"__ which might provisioned differently.
+But if you feel there is an opportunity to consolidate the number environments, with your team start with the questions __"what validation or testing do we need to get a release into production?"__ and __"can the testing be grouped and executed on a smaller number of environments?"__ which might be provisioned differently.
 
 
 
