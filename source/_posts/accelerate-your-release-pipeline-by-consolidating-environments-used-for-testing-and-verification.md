@@ -1,6 +1,6 @@
 ---
 title: >-
-  Accelerate your release pipeline by consolidating environments used for testing and verification
+  Accelerate your Sitecore release pipeline by consolidating environments used for testing and verification
 date: 2018-06-19 08:27:56
 categories: deployment
 tags: 
