@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://adamsimsy.com/"/>
-  <updated>2020-03-29T05:16:32.076Z</updated>
+  <updated>2020-03-29T05:27:08.132Z</updated>
   <id>http://adamsimsy.com/</id>
   
   <author>
@@ -21,11 +21,12 @@
     <link href="http://adamsimsy.com/2020/03/29/publish-a-aspnet-core-web-app-to-azure-using-github-actions/"/>
     <id>http://adamsimsy.com/2020/03/29/publish-a-aspnet-core-web-app-to-azure-using-github-actions/</id>
     <published>2020-03-29T12:37:38.000Z</published>
-    <updated>2020-03-29T05:16:32.076Z</updated>
+    <updated>2020-03-29T05:27:08.132Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;I’ve been working a lot with Azure DevOps to build and deploy many different types of applications to Azure Cloud, On-premise servers and handheld devices. But i thought it would be interesting to try and compare this to Github Actions which I believe is underpinned by Azure DevOps as it is owned by Microsoft.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/actions-opengraph.jpg&quot; alt=&quot;Github actions build&quot;&gt;&lt;/p&gt;
     
     </summary>
     

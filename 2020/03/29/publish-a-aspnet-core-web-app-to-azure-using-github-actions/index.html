@@ -20,6 +20,7 @@
 <meta property="og:site_name" content="Owning the Sitecore Experience">
 <meta property="og:description" content="I’ve been working a lot with Azure DevOps to build and deploy many different types of applications to Azure Cloud, On-premise servers and handheld devices. But i thought it would be interesting to try">
 <meta property="og:locale" content="EN">
+<meta property="og:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/actions-opengraph.jpg">
 <meta property="og:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/aspnetcore-source-code.jpg">
 <meta property="og:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/github-action-templates.jpg">
 <meta property="og:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/vanilla-action-workflow.jpg">
@@ -28,11 +29,11 @@
 <meta property="og:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/configure-github-action-sceret.jpg">
 <meta property="og:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/re-run-action.jpg">
 <meta property="og:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/published-website.jpg">
-<meta property="og:updated_time" content="2020-03-29T05:16:32.076Z">
+<meta property="og:updated_time" content="2020-03-29T05:27:08.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Publish a ASP.NET Core Web App to Azure using Github Actions">
 <meta name="twitter:description" content="I’ve been working a lot with Azure DevOps to build and deploy many different types of applications to Azure Cloud, On-premise servers and handheld devices. But i thought it would be interesting to try">
-<meta name="twitter:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/aspnetcore-source-code.jpg">
+<meta name="twitter:image" content="http://adamsimsy.com/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/actions-opengraph.jpg">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -158,6 +159,7 @@
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
     	<p>I’ve been working a lot with Azure DevOps to build and deploy many different types of applications to Azure Cloud, On-premise servers and handheld devices. But i thought it would be interesting to try and compare this to Github Actions which I believe is underpinned by Azure DevOps as it is owned by Microsoft.</p>
+<p><img src="/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/actions-opengraph.jpg" alt="Github actions build"></p>
 <a id="more"></a>
 <h2 id="Create-a-Vanilla-ASP-NET-Core-3-1-web-app"><a href="#Create-a-Vanilla-ASP-NET-Core-3-1-web-app" class="headerlink" title="Create a Vanilla ASP.NET Core 3.1 web app"></a>Create a Vanilla ASP.NET Core 3.1 web app</h2><p>So the app i choose to build and deploy was a ASP.NET Core 3.1 template app. I created a clean Github repo which can be <a href="https://github.com/Adamsimsy/aspnetcore-github-actions-publish-to-azure" target="_blank" rel="noopener">found here</a>.</p>
 <p>To do this i used the following command and specified the netcoreapp Framework version as i had multiple installed:<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet <span class="keyword">new</span> mvc -o Website <span class="comment">--framework netcoreapp3.1</span></span><br></pre></td></tr></table></figure></p>
