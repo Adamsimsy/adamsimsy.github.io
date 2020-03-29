@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Owning the Sitecore Experience</title>
+  
+  <subtitle>Adamsimsy&#39;s Sitecore and technical blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://adamsimsy.com/"/>
+  <updated>2020-03-29T04:53:49.803Z</updated>
+  <id>http://adamsimsy.com/</id>
+  
+  <author>
+    <name>Adamsimsy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Publish a ASP.NET Core Web App to Azure using Github Actions</title>
+    <link href="http://adamsimsy.com/2020/03/29/publish-a-aspnet-core-web-app-to-azure-using-github-actions/"/>
+    <id>http://adamsimsy.com/2020/03/29/publish-a-aspnet-core-web-app-to-azure-using-github-actions/</id>
+    <published>2020-03-29T12:37:38.000Z</published>
+    <updated>2020-03-29T04:53:49.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I’ve been working a lot with Azure DevOps to build and deploy many different types of applications to Azure Cloud, On-premise servers and handheld devices. But i thought it would be interesting to try and compare this to Github Actions which I believe is underpinned by Azure DevOps as it is owned by Microsoft.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DevOps" scheme="http://adamsimsy.com/categories/DevOps/"/>
+    
+    
+      <category term="gitub-actions" scheme="http://adamsimsy.com/tags/gitub-actions/"/>
+    
+      <category term="azure" scheme="http://adamsimsy.com/tags/azure/"/>
+    
+      <category term="aspnetcore" scheme="http://adamsimsy.com/tags/aspnetcore/"/>
+    
+      <category term="webapp" scheme="http://adamsimsy.com/tags/webapp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sitecore Symposium 2018: When Sitecore Squadrons feel the need for speed!</title>
+    <link href="http://adamsimsy.com/2018/10/12/sitecore-symposium-2018-when-sitecore-squadrons-feel-the-need-for-speed/"/>
+    <id>http://adamsimsy.com/2018/10/12/sitecore-symposium-2018-when-sitecore-squadrons-feel-the-need-for-speed/</id>
+    <published>2018-10-11T22:11:24.000Z</published>
+    <updated>2020-03-29T04:53:49.804Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;At this year’s Sitecore Symposium 2018 in Florida, I shared the story of how a Sitecore team flew higher than ever before to deliver a robust and rapid to deploy Sitecore platform. This platform, enabled Open Universities Australia to achieve “Best Business ROI Sitecore Experience Award”. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/symposium/symposium-slide.png&quot; alt=&quot;When Sitecore Squadrons feel the need for speed slides&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sitecore" scheme="http://adamsimsy.com/categories/sitecore/"/>
+    
+    
+      <category term="symposium" scheme="http://adamsimsy.com/tags/symposium/"/>
+    
+      <category term="presentations" scheme="http://adamsimsy.com/tags/presentations/"/>
+    
+      <category term="SitecoreSYM" scheme="http://adamsimsy.com/tags/SitecoreSYM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Accelerate your Sitecore release pipeline by consolidating environments used for testing and verification</title>
+    <link href="http://adamsimsy.com/2018/06/19/accelerate-your-release-pipeline-by-consolidating-environments-used-for-testing-and-verification/"/>
+    <id>http://adamsimsy.com/2018/06/19/accelerate-your-release-pipeline-by-consolidating-environments-used-for-testing-and-verification/</id>
+    <published>2018-06-19T08:27:56.000Z</published>
+    <updated>2020-03-29T04:53:49.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today, all agile teams are trying to deliver their features into production faster to keep up with rapidly changing customer and business demands. &lt;/p&gt;
+&lt;p&gt;A big contributing factor to feature delivery time is the release pipeline and the number of environments that the feature has to be deployed to. Typical environments being:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Development&lt;/li&gt;
+&lt;li&gt;Integration or SIT&lt;/li&gt;
+&lt;li&gt;Test&lt;/li&gt;
+&lt;li&gt;UAT&lt;/li&gt;
+&lt;li&gt;Pre-production&lt;/li&gt;
+&lt;li&gt;Production&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each environment taking time to deploy, execute testing, management of data and coordination between teams.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="deployment" scheme="http://adamsimsy.com/categories/deployment/"/>
+    
+    
+      <category term="continuous delivery" scheme="http://adamsimsy.com/tags/continuous-delivery/"/>
+    
+      <category term="testing" scheme="http://adamsimsy.com/tags/testing/"/>
+    
+      <category term="continuous deployment" scheme="http://adamsimsy.com/tags/continuous-deployment/"/>
+    
+      <category term="release pipeline" scheme="http://adamsimsy.com/tags/release-pipeline/"/>
+    
+      <category term="infrastructure" scheme="http://adamsimsy.com/tags/infrastructure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Convert Hyper-V generation 2 vhdx disk to generation 1 vhd disk</title>
+    <link href="http://adamsimsy.com/2018/06/16/convert-hyper-v-generation-2-vhdx-disk-to-generation-1-vhd-disk/"/>
+    <id>http://adamsimsy.com/2018/06/16/convert-hyper-v-generation-2-vhdx-disk-to-generation-1-vhd-disk/</id>
+    <published>2018-06-16T13:08:09.000Z</published>
+    <updated>2020-03-29T04:53:49.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;If you ever find you need to downgrade a Windows hyper-v machine from generation 2 .vhdx to a generation .vhd, this unfortunately doesn’t work by simply using the Hyper-V Manager edit and convert utility.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/hyper-v/image1-convert-to-vhd.png&quot; alt=&quot;Convert hyper-v disk&quot;&gt;&lt;/p&gt;
+&lt;p&gt;What you’ll get is a blinking cursor when you attached the converted .vhd disk to a new generation 1 VM.&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="hyper-v" scheme="http://adamsimsy.com/tags/hyper-v/"/>
+    
+      <category term="vhdx" scheme="http://adamsimsy.com/tags/vhdx/"/>
+    
+      <category term="vhd" scheme="http://adamsimsy.com/tags/vhd/"/>
+    
+      <category term="virtualization" scheme="http://adamsimsy.com/tags/virtualization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sitecore content and components missing after layout change</title>
+    <link href="http://adamsimsy.com/2017/11/25/sitecore-content-and-components-missing-after-layout-%20change/"/>
+    <id>http://adamsimsy.com/2017/11/25/sitecore-content-and-components-missing-after-layout- change/</id>
+    <published>2017-11-25T00:23:54.000Z</published>
+    <updated>2020-03-29T04:53:49.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I came across this issue recently after some changes were made to Sitecore layouts and placeholder names. A change was made to switch a template called ‘General page’ to use a new layout container which we had taken from Habitat. We switched from ‘ArticleAsideRight.cshtml’ to ‘1 Column.cshtml’.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sitecore" scheme="http://adamsimsy.com/categories/sitecore/"/>
+    
+    
+      <category term="powershell" scheme="http://adamsimsy.com/tags/powershell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reset Sitecore admin password and account</title>
+    <link href="http://adamsimsy.com/2017/11/25/reset-sitecore-admin-password-and-account/"/>
+    <id>http://adamsimsy.com/2017/11/25/reset-sitecore-admin-password-and-account/</id>
+    <published>2017-11-25T00:17:54.000Z</published>
+    <updated>2020-03-29T04:53:49.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I recently managed to lock out my Sitecore local admin account when using the Sitecore PowerShell module. It did this without warning when the elevated privileges stopped working correctly.&lt;/p&gt;
+&lt;p&gt;Anyway from a few various sources I found some examples of how to reset the password. But what was required was to also to set IsLockedOut value. &lt;/p&gt;
+&lt;p&gt;If you ever find your account locked out, try running the following.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sitecore" scheme="http://adamsimsy.com/categories/sitecore/"/>
+    
+    
+      <category term="account" scheme="http://adamsimsy.com/tags/account/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sitecore SC_ANALYTICS_GLOBAL_COOKIE missing</title>
+    <link href="http://adamsimsy.com/2017/11/12/sitecore-sc-global-anaytics-cookie-missing/"/>
+    <id>http://adamsimsy.com/2017/11/12/sitecore-sc-global-anaytics-cookie-missing/</id>
+    <published>2017-11-11T14:00:01.000Z</published>
+    <updated>2020-03-29T04:53:49.804Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is an uncommon issue and one that is easy to overlook if you’ve recently deployed Sitecore into production.&lt;/p&gt;
+&lt;p&gt;But you find that the persistant cookie “SC_ANALYTICS_GLOBAL_COOKIE” which Sitecore uses to track contacts across sessions in the xDB is missing. This causes a number of issues, but the main one being is that if a visitor returns to the website, a new contact is created as Sitecore cannot relate the two sessions using this unique visitor id.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sitecore" scheme="http://adamsimsy.com/categories/sitecore/"/>
+    
+    
+      <category term="xdb" scheme="http://adamsimsy.com/tags/xdb/"/>
+    
+      <category term="analytics" scheme="http://adamsimsy.com/tags/analytics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Moving my blog from Jekyll to Hexo</title>
+    <link href="http://adamsimsy.com/2017/03/12/Moving-my-blog-from-Jekyll-to-Hexo/"/>
+    <id>http://adamsimsy.com/2017/03/12/Moving-my-blog-from-Jekyll-to-Hexo/</id>
+    <published>2017-03-11T19:08:32.000Z</published>
+    <updated>2020-03-29T04:53:49.801Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;For some time I have been meaning to begin blogging about my Sitecore and development experiences to share with the community. &lt;/p&gt;
+&lt;p&gt;Around a year ago i created a new blog using &lt;a href=&quot;https://jekyllrb.com/docs/github-pages/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub pages and Jekyll&lt;/a&gt; which was straight forward. I made a few posts but as it was a really simple and not attractive blog, I was never keen to share my posts or write new ones. The reason it was so simple was because there are limitations with Jekyll themes and plugins running on GitHub pages, which GitHub renders on the fly.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="General" scheme="http://adamsimsy.com/categories/General/"/>
+    
+    
+      <category term="jekyll" scheme="http://adamsimsy.com/tags/jekyll/"/>
+    
+      <category term="hexo" scheme="http://adamsimsy.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://adamsimsy.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Differences between IaaS, PaaS and SaaS</title>
+    <link href="http://adamsimsy.com/2016/08/01/difference-between-iaas-paas-and-saas/"/>
+    <id>http://adamsimsy.com/2016/08/01/difference-between-iaas-paas-and-saas/</id>
+    <published>2016-07-31T16:57:54.000Z</published>
+    <updated>2020-03-29T04:53:49.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Over the last few years working as an SA i’ve helped to architect solutions that use more and more cloud services and very often see the following terms used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;IaaS&lt;/strong&gt; or &lt;em&gt;Infrastrcture as a Service&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PaaS&lt;/strong&gt; or &lt;em&gt;Platform as a Service&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SaaS&lt;/strong&gt; or &lt;em&gt;Software as a Service&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Just from looking at the names of each service types, most technical people can work out what is provided by each. But unfortunately sometimes people are unsure of the differences, paticularly where IaaS ends and PaaS starts.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="cloud" scheme="http://adamsimsy.com/categories/cloud/"/>
+    
+    
+      <category term="cloud" scheme="http://adamsimsy.com/tags/cloud/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sitecore scheduled tasks not running</title>
+    <link href="http://adamsimsy.com/2016/07/26/sitecore-scheduled-tasks-not-running/"/>
+    <id>http://adamsimsy.com/2016/07/26/sitecore-scheduled-tasks-not-running/</id>
+    <published>2016-07-25T16:57:54.000Z</published>
+    <updated>2020-03-29T04:53:49.804Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today i’ve been trying to understand why I couldn’t configure a scheduled task to run a Sitecore Powershell script. I found many useful articles which explained the configuration options for Sitecore scheduled tasks.&lt;/p&gt;
+&lt;p&gt;One notable detailed article can be found on the &lt;a href=&quot;http://sitecore-community.github.io/docs/documentation/Sitecore%20Fundamentals/Asynchronous%20Tasks/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sitecore Community Docs&lt;/a&gt; which reconfirmed my understanding of what triggers the scheduled tasks to run and how often the agent checks what tasks to be run.&lt;/p&gt;
+&lt;p&gt;I played around with these settings and still couldn’t get my scheduled task to run. I then read a post on &lt;a href=&quot;http://stackoverflow.com/questions/13506278/sitecore-schedule-task-not-running#new-answer&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;stack overflow&lt;/a&gt; which gave me a good pointer.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sitecore" scheme="http://adamsimsy.com/categories/sitecore/"/>
+    
+    
+      <category term="tasks" scheme="http://adamsimsy.com/tags/tasks/"/>
+    
+      <category term="processors" scheme="http://adamsimsy.com/tags/processors/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>No more wrappers with Sitecore fake db</title>
+    <link href="http://adamsimsy.com/2016/05/24/sitecore-fake-db/"/>
+    <id>http://adamsimsy.com/2016/05/24/sitecore-fake-db/</id>
+    <published>2016-05-24T00:17:54.000Z</published>
+    <updated>2020-03-29T04:53:49.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Just reviewed and started using this module after being frustrated with abstractions and getting buried in wrappers. No matter how good you are at managing your solution, you’ll end up with a mess of wrappers to be able to unit test every facet of Sitecore.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sitecore" scheme="http://adamsimsy.com/categories/sitecore/"/>
+    
+    
+      <category term="testing" scheme="http://adamsimsy.com/tags/testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Starting my Sitecore blog</title>
+    <link href="http://adamsimsy.com/2016/05/14/starting-my-sitecore-blog/"/>
+    <id>http://adamsimsy.com/2016/05/14/starting-my-sitecore-blog/</id>
+    <published>2016-05-14T00:16:20.000Z</published>
+    <updated>2020-03-29T04:53:49.804Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hello Sitecore world!!! &lt;/p&gt;
+&lt;p&gt;Since i began my career as a Sitecore developer more than 9 years ago when i joined the first Sitecore UK Partner &lt;a href=&quot;http://www.eduserv.org.uk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Eduserv&lt;/a&gt;, i always intended to create a blog about my experiences with Sitecore to help others in the community and also to document my development as a Sitecore developer. I’ve made notes, thought “I’ll write that up later” and made to many excuses about being “to busy”.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sitecore" scheme="http://adamsimsy.com/categories/sitecore/"/>
+    
+    
+  </entry>
+  
+</feed>
