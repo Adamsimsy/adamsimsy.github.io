@@ -7,6 +7,7 @@ tags:
   - aspnetcore
   - webapp
 categories: DevOps
+thumbnail: /images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/vanilla-action-workflow.jpg
 ---
 I've been working a lot with Azure DevOps to build and deploy many different types of applications to Azure Cloud, On-premise servers and handheld devices. But i thought it would be interesting to try and compare this to Github Actions which I believe is underpinned by Azure DevOps as it is owned by Microsoft.
 
