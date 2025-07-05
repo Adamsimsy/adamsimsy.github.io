@@ -151,9 +151,32 @@
  */
 .hero-section {
   text-align: center;
-  padding: $spacing-unit * 2 0;
+  padding: $spacing-unit * 2.5;
   background: linear-gradient(135deg, $grey-color-light 0%, white 100%);
-  margin-bottom: $spacing-unit * 1.5;
+  margin: $spacing-unit * 2 $spacing-unit $spacing-unit * 2;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  position: relative;
+  overflow: hidden;
+  
+  // Add a subtle inner glow effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    pointer-events: none;
+  }
+  
+  @include media-query($on-medium) {
+    margin: $spacing-unit $spacing-unit * 0.5 $spacing-unit * 1.5;
+    padding: $spacing-unit * 2;
+    border-radius: 12px;
+  }
   
   .hero-title {
     @include relative-font-size(3.5);
@@ -161,6 +184,8 @@
     color: $grey-color-dark;
     margin-bottom: $spacing-unit * 0.5;
     line-height: 1.2;
+    position: relative;
+    z-index: 1;
     
     @include media-query($on-medium) {
       @include relative-font-size(2.5);
@@ -171,8 +196,40 @@
     @include relative-font-size(1.2);
     color: $grey-color;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto $spacing-unit;
     line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-avatar {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, $brand-color 0%, $accent-color 100%);
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: $spacing-unit;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      color: white;
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
   }
 }
 
