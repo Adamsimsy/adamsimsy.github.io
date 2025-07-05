@@ -1,0 +1,369 @@
+@use "sass:math";
+@use "base" as *;
+
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 5px solid $brand-color;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $spacing-unit * 1.865;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(1.625);
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  @include media-query($on-palm) {
+    padding-right: 45px;
+  }
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.site-nav {
+  position: absolute;
+  top: 9px;
+  right: math.div($spacing-unit, 2);
+  background-color: $background-color;
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
+  text-align: right;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+
+    > svg {
+      fill: $grey-color-dark;
+    }
+  }
+
+  label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .trigger {
+    clear: both;
+    display: none;
+  }
+
+  input ~ .trigger {
+    clear: both;
+    display: none;
+  }
+
+  input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+    display: block;
+    padding: 5px 10px;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: $on-medium) {
+    position: static;
+    float: right;
+    border: none;
+    background-color: inherit;
+
+    label[for="nav-trigger"] {
+      display: none;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    input ~ .trigger {
+      display: block;
+    }
+
+    .page-link {
+      display: inline;
+      padding: 0;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      margin-left: auto;
+    }
+  }
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+  background-color: #f8f9fa;
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: math.div($spacing-unit, 2);
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+  margin-left: math.div($spacing-unit, -2);
+  @extend %clearfix;
+}
+
+.footer-col {
+  width: calc(100% - (#{$spacing-unit} / 2));
+  margin-bottom: math.div($spacing-unit, 2);
+  padding-left: math.div($spacing-unit, 2);
+}
+
+.footer-col-1,
+.footer-col-2 {
+  width: calc(50% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: calc(100% - (#{$spacing-unit} / 2));
+}
+
+@media screen and (min-width: $on-large) {
+  .footer-col-1 {
+    width: calc(35% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-2 {
+    width: calc(20% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: calc(45% - (#{$spacing-unit} / 2));
+  }
+}
+
+@media screen and (min-width: $on-medium) {
+  .footer-col-wrapper {
+    display: flex
+  }
+
+  .footer-col {
+    width: calc(100% - (#{$spacing-unit} / 2));
+    padding: 0 math.div($spacing-unit, 2);
+
+    &:first-child {
+      padding-right: math.div($spacing-unit, 2);
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      padding-left: math.div($spacing-unit, 2);
+    }
+  }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1 0 auto;
+}
+
+.page-heading {
+  @include relative-font-size(2);
+}
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+  margin-bottom: $spacing-unit / 2;
+  color: $grey-color-dark;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit * 1.5;
+    padding-bottom: $spacing-unit;
+    border-bottom: 1px solid $grey-color-light;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+  color: $grey-color-dark;
+  font-weight: 600;
+  margin-top: 8px;
+  line-height: 1.3;
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title,
+.post-content h1 {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1.15;
+  color: $grey-color-dark;
+
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(2.625);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h1, h2, h3 { margin-top: $spacing-unit * 2 }
+  h4, h5, h6 { margin-top: $spacing-unit }
+
+  h2 {
+    @include relative-font-size(1.75);
+
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(2);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.375);
+
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(1.625);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+  }
+
+  h5 {
+    @include relative-font-size(1.125);
+  }
+  h6 {
+    @include relative-font-size(1.0625);
+  }
+}
+
+.social-media-list,
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-media-list li,
+.pagination li {
+  margin: 5px 10px 5px 0;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+/**
+ * Pagination navbar
+ */
+.pagination {
+  margin-bottom: $spacing-unit;
+  @extend .social-media-list;
+  a, div {
+    min-width: 41px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  a {
+    color: $brand-color;
+    border: 1px solid $grey-color-light;
+    padding: 7px 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-color: $brand-color;
+  }
+
+  .current {
+    background: $brand-color;
+    color: #fff;
+    border: 1px solid $brand-color;
+    padding: 7px 10px;
+    outline: 0;
+  }
+
+  .disabled {
+    color: rgba($text-color, 0.5);
+    border: 1px solid transparent;
+    padding: 7px 10px;
+  }
+
+  .disabled:hover {
+    border-color: transparent;
+  }
+}
