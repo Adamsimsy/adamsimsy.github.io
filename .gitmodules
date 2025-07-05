@@ -1,3 +1,3 @@
 [submodule "themes/hexo-theme-material-flow"]
 	path = themes/hexo-theme-material-flow
-	url = git@github.com:Adamsimsy/hexo-theme-material-flow.git
+	url = https://github.com/Adamsimsy/hexo-theme-material-flow

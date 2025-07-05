@@ -2,7 +2,8 @@
 
 git clone git@github.com:Adamsimsy/adamsimsy.github.io.git
 git checkout -b source origin/source
-git submodule update --init --recursive --remote
+# git submodule update --init --recursive --remote
+git -c submodule."themes/hexo-theme-material-flow".url=https://github.com/Adamsimsy/hexo-theme-material-flow.git submodule update --init --recursive --remote
 npm install
 
 #might be needed on new pc
