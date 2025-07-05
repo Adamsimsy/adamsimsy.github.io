@@ -215,7 +215,7 @@
 
 .post-list-heading {
   @include relative-font-size(1.75);
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: math.div($spacing-unit, 2);
   color: $grey-color-dark;
 }
 
