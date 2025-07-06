@@ -1,0 +1,133 @@
+---
+layout: page
+title: Search Results
+permalink: /search/
+---
+
+<div class="search-page">
+  <div class="search-box-page">
+    <input type="text" id="search-input-page" placeholder="Search posts..." class="search-input" />
+    <button type="button" id="search-button-page" class="search-button">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="search-results">
+    <p class="search-info">Enter a search term to find posts.</p>
+  </div>
+</div>
+
+<style>
+.search-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.search-box-page {
+  display: flex;
+  margin-bottom: 2rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.search-box-page .search-input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-box-page .search-button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-box-page .search-button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+.search-result {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.search-result:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.search-result h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.search-result h3 a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.search-result h3 a:hover {
+  text-decoration: underline;
+}
+
+.search-result-meta {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.search-result-excerpt {
+  color: #555;
+  line-height: 1.6;
+}
+
+.search-result-tags {
+  margin-top: 0.5rem;
+}
+
+.search-result-tag {
+  display: inline-block;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.search-info {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+.search-stats {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+</style>

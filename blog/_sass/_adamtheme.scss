@@ -1053,6 +1053,17 @@
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     padding: 5px 15px;
+    transition: all 0.3s ease;
+    cursor: text;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+    
+    &:focus-within {
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    }
     
     .search-input {
       background: transparent;
@@ -1072,14 +1083,24 @@
       border: none;
       color: white;
       cursor: pointer;
-      padding: 0;
+      padding: 5px;
       margin-left: 10px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
       
       svg {
         width: 16px;
         height: 16px;
       }
     }
+  }
+
+  .mobile-search-link {
+    display: none;
   }
 }
 
@@ -1337,7 +1358,17 @@
     
     .search-box {
       .search-input {
-        width: 150px;
+        width: 120px;
+        font-size: 13px;
+      }
+      
+      .search-button {
+        padding: 3px;
+        
+        svg {
+          width: 14px;
+          height: 14px;
+        }
       }
     }
   }
@@ -1385,6 +1416,27 @@
       }
       span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+    
+    .search-box {
+      display: none;
+    }
+    
+    .mobile-search-link {
+      display: block;
+      color: white;
+      padding: 8px;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+      
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      
+      svg {
+        width: 20px;
+        height: 20px;
       }
     }
     
