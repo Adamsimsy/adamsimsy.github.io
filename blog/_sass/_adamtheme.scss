@@ -280,6 +280,8 @@
   overflow: hidden;
   transition: all 0.3s ease;
   border: 1px solid $grey-color-medium;
+  display: flex;
+  flex-direction: column;
   
   &:hover {
     transform: translateY(-4px);
@@ -287,8 +289,25 @@
   }
 }
 
+.post-card-thumbnail {
+  height: 180px;
+  overflow: hidden;
+  
+  .thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover .thumbnail-image {
+    transform: scale(1.05);
+  }
+}
+
 .post-card-content {
   padding: $spacing-unit;
+  flex: 1;
 }
 
 .post-date {
@@ -639,6 +658,20 @@
     @include media-query($on-medium) {
       @include relative-font-size(2.2);
     }
+  }
+}
+
+.post-thumbnail {
+  margin: 0 0 $spacing-unit * 1.5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  
+  .post-featured-image {
+    width: 100%;
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
   }
 }
 
