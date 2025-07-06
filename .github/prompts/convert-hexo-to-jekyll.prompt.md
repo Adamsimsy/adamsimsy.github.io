@@ -1,0 +1,3 @@
+Look at the [hexo-input.md](./examples/hexo-input.md) file as an example as Hexo blog post to convert and use the [2018-06-19-jekyll-output.md](./examples/2018-06-19-jekyll-output.md) as the target format to convert to.
+
+Also rename the file and prefix the source file name with the date metadata which is in the head of the markdown file. Looking at [hexo-input.md](./examples/hexo-input.md) as an example and the value date: 2018-06-19 08:27:56, this would be prefixed to the file and called '2018-06-19-hexo-input.md'.
