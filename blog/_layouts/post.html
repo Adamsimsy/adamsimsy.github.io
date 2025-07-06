@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (!postContent) return;
   
-  // Generate TOC from H2 headings
-  const headings = postContent.querySelectorAll('h2');
+  // Generate TOC from H2 and H3 headings
+  const headings = postContent.querySelectorAll('h2, h3');
   
   if (headings.length === 0) {
     tocContainer.style.display = 'none';
@@ -85,7 +85,21 @@ document.addEventListener('DOMContentLoaded', function() {
       .trim();
   }
   
+  let h2Counter = 0;
+  let h3Counter = 0;
+  
   headings.forEach((heading, index) => {
+    const isH2 = heading.tagName.toLowerCase() === 'h2';
+    const isH3 = heading.tagName.toLowerCase() === 'h3';
+    
+    // Reset H3 counter when we encounter a new H2
+    if (isH2) {
+      h2Counter++;
+      h3Counter = 0;
+    } else if (isH3) {
+      h3Counter++;
+    }
+    
     // Create an ID for the heading if it doesn't have one
     if (!heading.id) {
       const baseId = createId(heading.textContent) || 'heading-' + index;
@@ -105,8 +119,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const tocItem = document.createElement('li');
     const tocLink = document.createElement('a');
     tocLink.href = '#' + heading.id;
-    tocLink.textContent = heading.textContent;
-    tocLink.className = 'toc-link';
+    
+    // Generate appropriate numbering
+    let numberText = '';
+    if (isH2) {
+      numberText = `${h2Counter}.`;
+    } else if (isH3) {
+      // If H3 appears without a preceding H2, treat it as a top-level item
+      if (h2Counter === 0) {
+        h2Counter = 1;
+        h3Counter = 1;
+        numberText = `${h3Counter}.`;
+      } else {
+        numberText = `${h2Counter}.${h3Counter}`;
+      }
+    }
+    
+    tocLink.innerHTML = `<span class="toc-number">${numberText}</span> ${heading.textContent}`;
+    tocLink.className = `toc-link ${isH2 ? 'toc-h2' : 'toc-h3'}`;
     tocLink.title = heading.textContent; // Add tooltip
     tocItem.appendChild(tocLink);
     tocList.appendChild(tocItem);

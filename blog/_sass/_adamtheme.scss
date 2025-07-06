@@ -824,10 +824,42 @@
   transition: all 0.2s ease;
   border-left: 3px solid transparent;
   
+  .toc-number {
+    color: $brand-color;
+    font-weight: 600;
+    margin-right: 8px;
+    display: inline-block;
+    min-width: 20px;
+  }
+  
+  &.toc-h2 {
+    font-weight: 500;
+  }
+  
+  &.toc-h3 {
+    padding-left: 40px;
+    font-size: 13px;
+    color: lighten($grey-color-dark, 10%);
+    
+    .toc-number {
+      color: lighten($brand-color, 15%);
+      font-weight: 500;
+      min-width: 30px;
+    }
+  }
+  
   &:hover {
     background-color: rgba($brand-color, 0.05);
     color: $brand-color;
     text-decoration: none;
+    
+    .toc-number {
+      color: $brand-color;
+    }
+    
+    &.toc-h3 {
+      color: $brand-color;
+    }
   }
   
   &.active {
@@ -835,6 +867,19 @@
     color: $brand-color;
     border-left-color: $brand-color;
     font-weight: 600;
+    
+    .toc-number {
+      color: $brand-color;
+      font-weight: 700;
+    }
+    
+    &.toc-h3 {
+      font-weight: 500;
+      
+      .toc-number {
+        font-weight: 600;
+      }
+    }
   }
 }
 
