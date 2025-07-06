@@ -11,12 +11,12 @@ I came across this issue recently after some changes were made to Sitecore layou
 
 After changing, the developer working with me found that the authored content was missing for the 'General page' so he changed the placeholder on '1 Column.cshtml':
 
-{% codeblock %}
+{% highlight csharp %}
 From
 @Html.Sitecore().DynamicPlaceholder("col-huge", Model.Rendering.GetUseStaticPlaceholderNames())
 To
 @Html.Sitecore().DynamicPlaceholder("col-wide-1", Model.Rendering.GetUseStaticPlaceholderNames())
-{% endcodeblock %}
+{% endhighlight %}
 
 This worked great, except we had another template called 'Landing page' using this layout and the original placeholder. This would have been fine for any new content or content which hadn't had components added, as we updated the standard values for the template.
 

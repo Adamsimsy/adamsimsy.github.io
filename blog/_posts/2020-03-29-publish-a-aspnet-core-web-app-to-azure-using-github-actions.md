@@ -17,9 +17,9 @@ I've been working a lot with Azure DevOps to build and deploy many different typ
 So the app i choose to build and deploy was a ASP.NET Core 3.1 template app. I created a clean Github repo which can be [found here](https://github.com/Adamsimsy/aspnetcore-github-actions-publish-to-azure).
 
 To do this i used the following command and specified the netcoreapp Framework version as i had multiple installed:
-{% codeblock %}
+{% highlight bash %}
 dotnet new mvc -o Website --framework netcoreapp3.1
-{% endcodeblock %}
+{% endhighlight %}
 
 This should give you something like the following:
 ![aspnetcore source code](/images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/aspnetcore-source-code.jpg)
@@ -36,7 +36,7 @@ However, select "Set up a worflow yourself" which will give you the following:
 Accept the default path and "main.yml" path in your repo.
 
 Then paste in the following snippet which is also available from [here](https://github.com/Adamsimsy/aspnetcore-github-actions-publish-to-azure/blob/master/.github/workflows/main.yml):
-{% codeblock %}
+{% highlight yaml %}
 name: .NET Core
 
 on:
@@ -67,16 +67,16 @@ jobs:
         app-name: aspnetcore-github-actions-publish-to-azure
         publish-profile: ${ { secrets. } }
         package: ./output/
-{% endcodeblock %}
+{% endhighlight %}
 
 Optionally, if you want to attach the build as an artifact to the Github Action build, you can do this with the following snippet added to your "main.yml":
-{% codeblock %}
+{% highlight yaml %}
     - name: Publish artifact
       uses: actions/upload-artifact@v1
       with:
         name: aspnetcore-webapp
         path: ./output/
-{% endcodeblock %}
+{% endhighlight %}
 
 You'll then see the artifact attached as follows:
 
@@ -93,11 +93,11 @@ Once you have your web app, you'll then need to get your publishing profile. Do 
 
 This will give you an XML like the following:
 
-{% codeblock %}
+{% highlight xml %}
 <publishData><publishProfile profileName="test-github-action-webapp - Web Deploy" publishMethod="MSDeploy" />
 ...
 </publishData>
-{% endcodeblock %}
+{% endhighlight %}
 
 Now you need to configure your secret in Github. In your repository click Settings > Secrets. Then create a new secret called "azureWebAppPublishProfile" and paste in the full XML from your publish profile from your Azure Web App. See the following example:
 

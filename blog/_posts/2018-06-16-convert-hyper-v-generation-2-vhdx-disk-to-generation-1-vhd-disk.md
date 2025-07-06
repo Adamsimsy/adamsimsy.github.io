@@ -63,7 +63,7 @@ Use the Clone partition option with the options as below. You'll find this runs 
 Now create a new virtual machine in Hyper-v Manager that has attached the new vhd that was cloned. 
 
 Also attach a Windows installation ISO to this VM, boot into the VM and use the recovery option.  We need to do this to fix the MBR so we can boot. Do this by executing the following commands in recovery command prompt in the following order:
-{% codeblock %}
+{% highlight batch %}
 diskpart
 diskpart > Select volume 1
 diskpart > active
@@ -73,7 +73,7 @@ bootrec /fixmbr
 bootrec /fixboot
 bootrec /rebuildbcd (select yes for [1]  c:\windows)
 Exit
-{% endcodeblock %}
+{% endhighlight %}
 
 ### Finished with bootable vm
 

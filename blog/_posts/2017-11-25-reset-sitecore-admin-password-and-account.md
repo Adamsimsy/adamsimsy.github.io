@@ -13,7 +13,7 @@ If you ever find your account locked out, try running the following.
 
 <!-- more -->
 
-{% codeblock %}
+{% highlight sql %}
 UPDATE [aspnet_Membership] 
 SET 
 [Password]='qOvF8m8F2IcWMvfOBjJYHmfLABc=', 
@@ -21,6 +21,6 @@ SET
 [IsApproved] = '1', 
 [IsLockedOut] = '0'
 WHERE UserId IN (SELECT UserId FROM dbo.aspnet_Users WHERE UserName = 'sitecore\Admin') 
-{% endcodeblock %}
+{% endhighlight %}
 
 Enjoy!
