@@ -30,9 +30,9 @@ layout: default
               <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</div>
             {%- endif -%}
             
-            {%- if post.image -%}
-              <div class="post-image">
-                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+            {%- if post.thumbnail or post.image -%}
+              <div class="post-thumbnail">
+                <img src="{{ post.thumbnail | default: post.image | relative_url }}" alt="{{ post.title }}" />
               </div>
             {%- endif -%}
             
