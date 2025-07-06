@@ -36,6 +36,10 @@ author:
 
 # Build settings
 # theme: minima (commented out to use custom theme)
+
+# Permalink structure (removes categories from URLs)
+permalink: /:year/:month/:day/:title.html
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
