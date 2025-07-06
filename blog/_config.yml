@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Adam's Blog
+title: Owning the Sitecore Experience
 email: adam@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A modern, clean blog built with Jekyll using the custom AdamTheme.
@@ -27,6 +27,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adamsimsy
 github_username:  adamsimsy
+
+# Author information
+author:
+  name: "Adamsimsy"
+  bio: "Technology enthusiast sharing thoughts on Sitecore, development, and cloud solutions."
+  image: "/images/avatar.jpg"
 
 # Build settings
 # theme: minima (commented out to use custom theme)

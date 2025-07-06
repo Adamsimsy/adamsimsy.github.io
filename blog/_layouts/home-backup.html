@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+<div class="home">
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h1 class="hero-title">Hi! I’m {{ site.author.name | default: site.title }} 👋</h1>
+    <p class="hero-description">
+      {{ site.author.bio | default: site.description }}
+    </p>
+    {%- if site.author.image -%}
+      <img src="{{ site.author.image }}" alt="{{ site.author.name }}" class="hero-avatar" style="border-radius:50%;width:120px;margin:24px auto 0;display:block;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+    {%- endif -%}
+    <a href="/contact/" class="hero-cta">Let’s Work Together</a>
+  </div>
+
+  <!-- Featured Posts Section -->
+  {%- assign featured_posts = site.posts | where_exp: "post", "post.featured == true" | slice: 0,3 -%}
+  {%- if featured_posts.size > 0 -%}
+    <section class="featured-section">
+      <h2 class="section-title">Featured posts</h2>
+      <div class="post-grid">
+        {%- for post in featured_posts -%}
+        <article class="post-card">
+          {%- if post.thumbnail -%}
+          <div class="post-card-thumbnail">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="thumbnail-image">
+            </a>
+          </div>
+          {%- endif -%}
+          <div class="post-card-content">
+            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
+            <h3 class="post-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            {%- if post.excerpt -%}
+              <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+            {%- endif -%}
+            <div class="post-meta">
+              <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endif -%}
+
+  <div class="main-content-with-sidebar" style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap;">
+    <div class="main-content" style="flex:2 1 500px;min-width:0;">
+      <!-- Latest Posts Section -->
+      {%- if site.posts.size > 0 -%}
+        <section class="posts-section">
+          <h2 class="section-title">{{ page.list_title | default: "Latest Posts" }}</h2>
+          <div class="post-grid">
+            {%- for post in site.posts offset:featured_posts.size -%}
+            <article class="post-card">
+              {%- if post.thumbnail -%}
+              <div class="post-card-thumbnail">
+                <a href="{{ post.url | relative_url }}">
+                  <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="thumbnail-image">
+                </a>
+              </div>
+              {%- endif -%}
+              <div class="post-card-content">
+                <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
+                <h3 class="post-title">
+                  <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                </h3>
+                {%- if post.excerpt -%}
+                  <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+                {%- endif -%}
+                <div class="post-meta">
+                  <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+                </div>
+              </div>
+            </article>
+            {%- endfor -%}
+          </div>
+        </section>
+      {%- endif -%}
+      <div class="rss-subscribe">
+        <a href="{{ "/feed.xml" | relative_url }}" class="rss-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/>
+          </svg>
+          Subscribe via RSS
+        </a>
+      </div>
+    </div>
+    <aside class="sidebar" style="flex:1 1 320px;min-width:260px;max-width:400px;">
+      {%- include newsletter-signup.html -%}
+      {%- include topics-widget.html -%}
+      {%- include recent-posts-widget.html -%}
+    </aside>
+  </div>
+</div>
