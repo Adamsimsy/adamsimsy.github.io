@@ -127,6 +127,17 @@ permalink: /tags
         </ul>
       </div>
       
+      <!-- Tags Section -->
+      <div class="sidebar-widget tags-widget">
+        <h3 class="widget-title">#Tags</h3>
+        <div class="tag-cloud">
+          {%- assign tags = site.tags | sort -%}
+          {%- for tag in tags -%}
+            <a href="{{ '/tags' | relative_url }}?tag={{ tag[0] | slugify }}" class="tag-cloud-item">{{ tag[0] }}</a>
+          {%- endfor -%}
+        </div>
+      </div>
+      
       <!-- Categories Section -->
       <div class="sidebar-widget categories-widget">
         <h3 class="widget-title">#Categories</h3>
@@ -141,17 +152,6 @@ permalink: /tags
             </li>
           {%- endfor -%}
         </ul>
-      </div>
-      
-      <!-- Tags Section -->
-      <div class="sidebar-widget tags-widget">
-        <h3 class="widget-title">#Tags</h3>
-        <div class="tag-cloud">
-          {%- assign tags = site.tags | sort -%}
-          {%- for tag in tags -%}
-            <a href="{{ '/tags' | relative_url }}?tag={{ tag[0] | slugify }}" class="tag-cloud-item">{{ tag[0] }}</a>
-          {%- endfor -%}
-        </div>
       </div>
     </aside>
   </div>
