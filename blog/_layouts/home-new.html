@@ -19,7 +19,7 @@ layout: default
               </time>
               {%- if post.categories.size > 0 -%}
                 {%- for category in post.categories -%}
-                  <a href="{{ '/categories/' | append: category | relative_url }}" class="category-link">{{ category }}</a>
+                  <a href="{{ '/categories' | relative_url }}?category={{ category | slugify }}" class="category-link">{{ category }}</a>
                 {%- endfor -%}
               {%- endif -%}
             </div>
@@ -94,7 +94,7 @@ layout: default
           {%- assign categories = site.categories | sort -%}
           {%- for category in categories -%}
             <li>
-              <a href="{{ '/categories/' | append: category[0] | relative_url }}">
+              <a href="{{ '/categories' | relative_url }}?category={{ category[0] | slugify }}">
                 {{ category[0] }} 
                 <span class="count">{{ category[1].size }}</span>
               </a>
