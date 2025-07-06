@@ -1,11 +1,9 @@
 ---
-title: Convert Hyper-V generation 2 vhdx disk to generation 1 vhd disk
+layout: post
+title: "Convert Hyper-V generation 2 vhdx disk to generation 1 vhd disk"
 date: 2018-06-16 13:08:09
-tags:
-- hyper-v
-- vhdx
-- vhd
-- virtualization
+categories: virtualization
+tags: hyper-v vhdx vhd virtualization
 ---
 If you ever find you need to downgrade a Windows hyper-v machine from generation 2 .vhdx to a generation .vhd, this unfortunately doesn't work by simply using the Hyper-V Manager edit and convert utility.
 
@@ -82,6 +80,3 @@ Exit
 Stop the VM, eject the Windows ISO and then start the VM and you should get windows booting again on generation 1 vhd using mbr :)
 
 ![Successfull windows boot](/images/hyper-v/image7-succesful-windows-boot.png)
-	
-	
-	

@@ -1,9 +1,9 @@
 ---
-title:  Sitecore content and components missing after layout change
-date:   2017-11-25 00:23:54
+layout: post
+title: "Sitecore content and components missing after layout change"
+date: 2017-11-25 00:23:54
 categories: sitecore
-tags:
-- powershell
+tags: powershell
 ---
 I came across this issue recently after some changes were made to Sitecore layouts and placeholder names. A change was made to switch a template called 'General page' to use a new layout container which we had taken from Habitat. We switched from 'ArticleAsideRight.cshtml' to '1 Column.cshtml'.
 

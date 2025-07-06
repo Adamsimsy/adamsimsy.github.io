@@ -1,9 +1,9 @@
 ---
-title:  Reset Sitecore admin password and account
-date:   2017-11-25 00:17:54
+layout: post
+title: "Reset Sitecore admin password and account"
+date: 2017-11-25 00:17:54
 categories: sitecore
-tags:
-- account
+tags: account
 ---
 I recently managed to lock out my Sitecore local admin account when using the Sitecore PowerShell module. It did this without warning when the elevated privileges stopped working correctly.
 

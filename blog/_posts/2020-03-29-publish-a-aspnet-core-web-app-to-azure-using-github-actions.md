@@ -1,12 +1,9 @@
 ---
-title: Publish a ASP.NET Core Web App to Azure using Github Actions
+layout: post
+title: "Publish a ASP.NET Core Web App to Azure using Github Actions"
 date: 2020-03-29 12:37:38
-tags:
-  - gitub-actions
-  - azure
-  - aspnetcore
-  - webapp
 categories: DevOps
+tags: gitub-actions azure aspnetcore webapp
 thumbnail: /images/publish-a-aspnet-core-web-app-to-azure-using-github-actions/actions-opengraph.jpg
 ---
 I've been working a lot with Azure DevOps to build and deploy many different types of applications to Azure Cloud, On-premise servers and handheld devices. But i thought it would be interesting to try and compare this to Github Actions which I believe is underpinned by Azure DevOps as it is owned by Microsoft.
