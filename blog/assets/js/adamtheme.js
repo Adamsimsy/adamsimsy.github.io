@@ -203,7 +203,7 @@
         function performSearch(query) {
             if (!query || query.trim().length < 2) {
                 // If we're on the search page, show the initial message
-                if (window.location.pathname.includes('/search/')) {
+                if (window.location.pathname.includes('/search')) {
                     showSearchResults([], query);
                 }
                 return;
@@ -212,11 +212,11 @@
             loadSearchData().then(data => {
                 const results = searchPosts(data, query.trim());
                 
-                if (window.location.pathname.includes('/search/')) {
+                if (window.location.pathname.includes('/search')) {
                     showSearchResults(results, query);
                 } else {
                     // Redirect to search page with query
-                    const searchUrl = '/search/?q=' + encodeURIComponent(query);
+                    const searchUrl = '/search?q=' + encodeURIComponent(query);
                     window.location.href = searchUrl;
                 }
             });
@@ -286,7 +286,7 @@
             const query = this.value;
             
             // Debounce search if we're on the search page
-            if (window.location.pathname.includes('/search/')) {
+            if (window.location.pathname.includes('/search')) {
                 searchTimeout = setTimeout(() => {
                     performSearch(query);
                 }, 300);
@@ -318,7 +318,7 @@
         });
 
         // If we're on the search page, initialize with URL query
-        if (window.location.pathname.includes('/search/')) {
+        if (window.location.pathname.includes('/search')) {
             const urlParams = new URLSearchParams(window.location.search);
             const query = urlParams.get('q');
             
@@ -341,8 +341,8 @@
                         if (newQuery !== query) {
                             // Update URL and perform search
                             const newUrl = newQuery ? 
-                                '/search/?q=' + encodeURIComponent(newQuery) : 
-                                '/search/';
+                                '/search?q=' + encodeURIComponent(newQuery) : 
+                                '/search';
                             window.history.pushState({}, '', newUrl);
                             performSearch(newQuery);
                         }

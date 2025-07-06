@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tags
-permalink: /tags/
+permalink: /tags
 ---
 
 <div class="home">
@@ -22,7 +22,7 @@ permalink: /tags/
           <div class="tag-cloud">
             {% assign tags = site.tags | sort %}
             {% for tag in tags %}
-              <a href="{{ '/tags/' | relative_url }}?tag={{ tag[0] | slugify }}" class="tag-item" style="font-size: {{ tag[1].size | times: 0.2 | plus: 0.8 }}rem;">
+              <a href="{{ '/tags' | relative_url }}?tag={{ tag[0] | slugify }}" class="tag-item" style="font-size: {{ tag[1].size | times: 0.2 | plus: 0.8 }}rem;">
                 {{ tag[0] }} ({{ tag[1].size }})
               </a>
             {% endfor %}
@@ -94,7 +94,7 @@ permalink: /tags/
               {%- if post.tags.size > 0 -%}
                 <div class="post-tags">
                   {%- for tag in post.tags -%}
-                    <a href="{{ '/tags/' | relative_url }}?tag={{ tag | slugify }}" class="tag-link">#{{ tag }}</a>
+                    <a href="{{ '/tags' | relative_url }}?tag={{ tag | slugify }}" class="tag-link">#{{ tag }}</a>
                   {%- endfor -%}
                 </div>
               {%- endif -%}
@@ -149,7 +149,7 @@ permalink: /tags/
         <div class="tag-cloud">
           {%- assign tags = site.tags | sort -%}
           {%- for tag in tags -%}
-            <a href="{{ '/tags/' | relative_url }}?tag={{ tag[0] | slugify }}" class="tag-cloud-item">{{ tag[0] }}</a>
+            <a href="{{ '/tags' | relative_url }}?tag={{ tag[0] | slugify }}" class="tag-cloud-item">{{ tag[0] }}</a>
           {%- endfor -%}
         </div>
       </div>
