@@ -37,8 +37,8 @@ author:
 # Build settings
 # theme: minima (commented out to use custom theme)
 
-# Permalink structure (removes categories from URLs)
-permalink: /:year/:month/:day/:title.html
+# Permalink structure (removes categories and .html extension from URLs)
+permalink: /:year/:month/:day/:title/
 
 plugins:
   - jekyll-feed
