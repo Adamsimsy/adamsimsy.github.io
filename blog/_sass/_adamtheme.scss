@@ -1,6 +1,4 @@
-@use "sass:math";
-@use "sass:color";
-@use "base" as *;
+@import "base";
 
 /**
  * Site header
@@ -410,7 +408,7 @@
  * Site footer
  */
 .site-footer {
-  background: linear-gradient(135deg, $grey-color-dark 0%, color.adjust($grey-color-dark, $lightness: -10%) 100%);
+  background: linear-gradient(135deg, $grey-color-dark 0%, darken($grey-color-dark, 10%) 100%);
   color: white;
   padding: $spacing-unit * 2 0;
   margin-top: $spacing-unit * 3;
@@ -581,7 +579,7 @@
 
 .footer-heading {
   @include relative-font-size(1.125);
-  margin-bottom: math.div($spacing-unit, 2);
+  margin-bottom: ($spacing-unit / 2);
 }
 
 .contact-list,
@@ -593,14 +591,14 @@
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
-  margin-left: math.div($spacing-unit, -2);
+  margin-left: ($spacing-unit / -2);
   @extend %clearfix;
 }
 
 .footer-col {
   width: calc(100% - (#{$spacing-unit} / 2));
-  margin-bottom: math.div($spacing-unit, 2);
-  padding-left: math.div($spacing-unit, 2);
+  margin-bottom: ($spacing-unit / 2);
+  padding-left: ($spacing-unit / 2);
 }
 
 .footer-col-1,
@@ -633,16 +631,16 @@
 
   .footer-col {
     width: calc(100% - (#{$spacing-unit} / 2));
-    padding: 0 math.div($spacing-unit, 2);
+    padding: 0 ($spacing-unit / 2);
 
     &:first-child {
-      padding-right: math.div($spacing-unit, 2);
+      padding-right: ($spacing-unit / 2);
       padding-left: 0;
     }
 
     &:last-child {
       padding-right: 0;
-      padding-left: math.div($spacing-unit, 2);
+      padding-left: ($spacing-unit / 2);
     }
   }
 }
@@ -656,7 +654,7 @@
 
 .post-list-heading {
   @include relative-font-size(1.75);
-  margin-bottom: math.div($spacing-unit, 2);
+  margin-bottom: ($spacing-unit / 2);
   color: $grey-color-dark;
 }
 
@@ -924,10 +922,10 @@
   &.toc-h3 {
     padding-left: 40px;
     font-size: 13px;
-    color: color.adjust($grey-color-dark, $lightness: 10%);
+    color: lighten($grey-color-dark, 10%);
     
     .toc-number {
-      color: color.adjust($brand-color, $lightness: 15%);
+      color: lighten($brand-color, 15%);
       font-weight: 500;
       min-width: 30px;
     }

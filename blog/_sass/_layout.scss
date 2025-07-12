@@ -1,6 +1,4 @@
-@use "sass:math";
-@use "sass:color";
-@use "base" as *;
+@import "base";
 
 /**
  * Reset some basic elements
@@ -122,11 +120,11 @@ a {
   transition: color 0.3s ease;
 
   &:visited {
-    color: color.adjust($brand-color, $lightness: -15%);
+    color: darken($brand-color, 15%);
   }
 
   &:hover {
-    color: color.adjust($brand-color, $lightness: 10%);
+    color: lighten($brand-color, 10%);
     text-decoration: underline;
   }
 
@@ -145,12 +143,12 @@ a {
 blockquote {
   color: $grey-color;
   border-left: 4px solid $brand-color;
-  padding-left: math.div($spacing-unit, 2);
+  padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
   background-color: #f8f9fa;
-  padding: math.div($spacing-unit, 2);
+  padding: $spacing-unit / 2;
   border-radius: 4px;
 
   > :last-child {
@@ -192,8 +190,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: math.div($spacing-unit, 2);
-  padding-left: math.div($spacing-unit, 2);
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
@@ -247,21 +245,21 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: color.adjust($text-color, $lightness: 18%);
+  color: lighten($text-color, 18%);
   border-collapse: collapse;
   border: 1px solid $grey-color-light;
   tr {
     &:nth-child(even) {
-      background-color: color.adjust($grey-color-light, $lightness: 6%);
+      background-color: lighten($grey-color-light, 6%);
     }
   }
   th, td {
-    padding: math.div($spacing-unit, 3) math.div($spacing-unit, 2);
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: color.adjust($grey-color-light, $lightness: 3%);
-    border: 1px solid color.adjust($grey-color-light, $lightness: -4%);
-    border-bottom-color: color.adjust($grey-color-light, $lightness: -12%);
+    background-color: lighten($grey-color-light, 3%);
+    border: 1px solid darken($grey-color-light, 4%);
+    border-bottom-color: darken($grey-color-light, 12%);
   }
   td {
     border: 1px solid $grey-color-light;

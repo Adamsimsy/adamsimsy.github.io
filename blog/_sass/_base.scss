@@ -1,5 +1,3 @@
-@use "sass:math";
-
 // Define defaults for each variable.
 $base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
 $code-font-family: "JetBrains Mono", "SF Mono", Monaco, Inconsolata, "Roboto Mono", Consolas, "Courier New", Courier, monospace !default;
@@ -57,7 +55,7 @@ $on-large:         $on-laptop !default;
 
 // Placeholder for vertical rhythm
 %vertical-rhythm {
-  margin-bottom: math.div($spacing-unit, 2);
+  margin-bottom: $spacing-unit / 2;
 }
 
 // Clearfix utility
