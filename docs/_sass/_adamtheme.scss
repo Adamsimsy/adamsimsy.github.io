@@ -343,7 +343,7 @@
 }
 
 .post-excerpt {
-  color: $grey-color;
+  color: rgba(white, 0.9) !important;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -1193,7 +1193,7 @@
   
   .post-content {
     .post-excerpt {
-      color: #555;
+      color: rgba(white, 0.9) !important;
       line-height: 1.6;
       margin-bottom: 20px;
     }
