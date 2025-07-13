@@ -1611,11 +1611,6 @@
     object-fit: cover;
   }
   
-  &.nav-card-placeholder {
-    color: #4a90e2;
-    opacity: 0.6;
-  }
-  
   @include media-query($on-palm) {
     width: 100px;
     height: 100px;
