@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Owning the Sitecore Experience
-email: adam@example.com
+title: Adamsimsy Tech Blog
+email: 
 description: >- # this means to ignore newlines until "baseurl:"
   A modern, clean blog built with Jekyll using the custom AdamTheme.
   Sharing thoughts on development, technology, and more.
