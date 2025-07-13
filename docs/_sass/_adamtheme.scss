@@ -4,12 +4,12 @@
  * Site header
  */
 .site-header {
-  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%) !important;
+  background: linear-gradient(135deg, #161b22 0%, #0d1117 100%) !important;
   box-shadow: 0 4px 20px rgba(0,0,0,0.7);
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #21262d;
   
   .wrapper {
     max-width: 1200px;
@@ -156,11 +156,11 @@
 .hero-section {
   text-align: center;
   padding: $spacing-unit * 2.5;
-  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #21262d 0%, #161b22 100%);
   margin: $spacing-unit * 2 $spacing-unit $spacing-unit * 2;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-  border: 1px solid #3a3a3a;
+  border: 1px solid #21262d;
   position: relative;
   overflow: hidden;
   
@@ -694,11 +694,12 @@
  * Individual Posts
  */
 .post {
-  background: white;
+  background: $grey-color-light;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   margin: $spacing-unit 0;
   overflow: hidden;
+  border: 1px solid $grey-color-medium;
 }
 
 .post-container {
