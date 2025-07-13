@@ -96,11 +96,17 @@ permalink: /archives/
 }
 
 .archive-category {
+  background: #21262d;
+  color: #f0f6fc;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.archive-category:hover {
   background: #4a90e2;
   color: white;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 0.8rem;
 }
 
 .archive-title {
