@@ -345,7 +345,7 @@
 .post-excerpt {
   color: rgba(white, 0.9) !important;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .post-meta {
@@ -358,7 +358,7 @@
   color: $brand-color;
   text-decoration: none;
   font-weight: 600;
-  font-size: $small-font-size;
+  font-size: 0.85rem;
   transition: all 0.3s ease;
   
   &:hover {
@@ -1220,6 +1220,7 @@
         color: #4a90e2;
         text-decoration: none;
         font-weight: 500;
+        font-size: 0.85rem;
         transition: color 0.3s ease;
         
         &:hover {
