@@ -411,11 +411,13 @@
  * Site footer
  */
 .site-footer {
-  background: linear-gradient(135deg, $grey-color-dark 0%, darken($grey-color-dark, 10%) 100%);
-  color: white;
+  background: linear-gradient(135deg, #161b22 0%, #0d1117 100%) !important;
+  color: white !important;
   padding: $spacing-unit * 2 0;
   margin-top: $spacing-unit * 3;
   position: relative;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+  border-top: 1px solid #21262d;
   
   &::before {
     content: '';
@@ -455,7 +457,7 @@
     @include relative-font-size(1.2);
     font-weight: 600;
     margin-bottom: 16px;
-    color: white;
+    color: white !important;
     
     @include media-query($on-tablet) {
       @include relative-font-size(1.15);
@@ -469,7 +471,7 @@
   }
   
   .footer-description {
-    color: rgba(white, 0.8);
+    color: rgba(white, 0.8) !important;
     line-height: 1.6;
     
     @include media-query($on-tablet) {
@@ -498,12 +500,12 @@
       }
       
       a {
-        color: rgba(white, 0.8);
+        color: rgba(white, 0.8) !important;
         text-decoration: none;
         transition: color 0.3s ease;
         
         &:hover {
-          color: white;
+          color: white !important;
         }
       }
     }
@@ -525,7 +527,7 @@
     }
     
     a {
-      color: rgba(white, 0.8);
+      color: rgba(white, 0.8) !important;
       font-size: 1.2rem;
       transition: color 0.3s ease;
       
@@ -538,7 +540,7 @@
       }
       
       &:hover {
-        color: white;
+        color: white !important;
       }
     }
   }
@@ -574,7 +576,7 @@
   text-align: center;
   
   p {
-    color: rgba(white, 0.6);
+    color: rgba(white, 0.6) !important;
     font-size: $small-font-size;
     margin: 0;
   }
@@ -583,6 +585,7 @@
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: ($spacing-unit / 2);
+  color: white !important;
 }
 
 .contact-list,
@@ -593,7 +596,7 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
+  color: rgba(white, 0.8) !important;
   margin-left: ($spacing-unit / -2);
   @extend %clearfix;
 }
