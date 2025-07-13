@@ -34,60 +34,6 @@ layout: default
       {{ content }}
     </div>
 
-    <footer class="post-footer">
-      <div class="post-navigation">
-        {%- if page.previous or page.next -%}
-          <div class="nav-cards">
-            {%- if page.previous -%}
-              <div class="nav-card nav-prev">
-                <a href="{{ page.previous.url | relative_url }}">
-                  {%- if page.previous.thumbnail -%}
-                    <div class="nav-card-image">
-                      <img src="{{ page.previous.thumbnail | relative_url }}" alt="{{ page.previous.title | escape }}" />
-                    </div>
-                  {%- else -%}
-                    <div class="nav-card-image nav-card-placeholder">
-                      <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
-                      </svg>
-                    </div>
-                  {%- endif -%}
-                  <div class="nav-card-content">
-                    <span class="nav-card-label">Previous</span>
-                    <h3 class="nav-card-title">{{ page.previous.title | escape }}</h3>
-                  </div>
-                </a>
-              </div>
-            {%- else -%}
-              <div class="nav-card nav-spacer"></div>
-            {%- endif -%}
-            
-            {%- if page.next -%}
-              <div class="nav-card nav-next">
-                <a href="{{ page.next.url | relative_url }}">
-                  {%- if page.next.thumbnail -%}
-                    <div class="nav-card-image">
-                      <img src="{{ page.next.thumbnail | relative_url }}" alt="{{ page.next.title | escape }}" />
-                    </div>
-                  {%- else -%}
-                    <div class="nav-card-image nav-card-placeholder">
-                      <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
-                      </svg>
-                    </div>
-                  {%- endif -%}
-                  <div class="nav-card-content">
-                    <span class="nav-card-label">Next</span>
-                    <h3 class="nav-card-title">{{ page.next.title | escape }}</h3>
-                  </div>
-                </a>
-              </div>
-            {%- else -%}
-              <div class="nav-card nav-spacer"></div>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-      </div>
     </footer>
   </div>
 
@@ -95,6 +41,61 @@ layout: default
     {%- include disqus_comments.html -%}
   {%- endif -%}
 </article>
+
+<!-- Post Navigation Cards - Completely outside article element -->
+{%- if page.previous or page.next -%}
+  <div class="post-navigation">
+    <div class="nav-cards">
+      {%- if page.previous -%}
+        <div class="nav-card nav-prev">
+          <a href="{{ page.previous.url | relative_url }}">
+            {%- if page.previous.thumbnail -%}
+              <div class="nav-card-image">
+                <img src="{{ page.previous.thumbnail | relative_url }}" alt="{{ page.previous.title | escape }}" />
+              </div>
+            {%- else -%}
+              <div class="nav-card-image nav-card-placeholder">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
+                </svg>
+              </div>
+            {%- endif -%}
+            <div class="nav-card-content">
+              <span class="nav-card-label">Previous</span>
+              <h3 class="nav-card-title">{{ page.previous.title | escape }}</h3>
+            </div>
+          </a>
+        </div>
+      {%- else -%}
+        <div class="nav-card nav-spacer"></div>
+      {%- endif -%}
+      
+      {%- if page.next -%}
+        <div class="nav-card nav-next">
+          <a href="{{ page.next.url | relative_url }}">
+            {%- if page.next.thumbnail -%}
+              <div class="nav-card-image">
+                <img src="{{ page.next.thumbnail | relative_url }}" alt="{{ page.next.title | escape }}" />
+              </div>
+            {%- else -%}
+              <div class="nav-card-image nav-card-placeholder">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
+                </svg>
+              </div>
+            {%- endif -%}
+            <div class="nav-card-content">
+              <span class="nav-card-label">Next</span>
+              <h3 class="nav-card-title">{{ page.next.title | escape }}</h3>
+            </div>
+          </a>
+        </div>
+      {%- else -%}
+        <div class="nav-card nav-spacer"></div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
