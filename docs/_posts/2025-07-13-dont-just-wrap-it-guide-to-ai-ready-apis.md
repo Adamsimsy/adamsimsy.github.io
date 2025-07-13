@@ -262,6 +262,9 @@ The solution is not to convert all APIs, but to identify the correct architectur
 <div>
 <h3 style="color: #52A5FF;">A Rich Tooling Ecosystem</h3>
 <p>The technical barrier to conversion is low. With a quality OpenAPI Specification (OAS) as your blueprint, a rich ecosystem of libraries, gateways, and platforms can automate the creation of an MCP server. The key is to apply these powerful tools to the *right* APIs.</p>
+<p>For teams who own the application source code, libraries like `FastAPI-MCP` and `django-mcp` integrate directly into existing web frameworks, programmatically exposing API routes as MCP tools.</p>
+<p>Tools such as Speakeasy and the open-source `openapi-mcp` can generate a complete, standalone MCP server directly from an OAS file, decoupling it from the API's source code.</p>
+<p>API Gateways like Microsoft Azure API Management and the open-source Higress can expose a managed REST API as an MCP server at the infrastructure level</p>
 </div>
 
 <div class="glass-card">
