@@ -1176,16 +1176,17 @@
       }
       
       .category-link {
-        background: #4a90e2;
-        color: white;
-        padding: 3px 8px;
-        border-radius: 4px;
+        background: $grey-color-medium;
+        color: $text-color;
+        padding: 5px 10px;
+        border-radius: 15px;
         text-decoration: none;
-        font-size: 0.8rem;
-        transition: background 0.3s ease;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
         
         &:hover {
-          background: #357abd;
+          background: #4a90e2;
+          color: white;
         }
       }
     }
