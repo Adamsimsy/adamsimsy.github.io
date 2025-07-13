@@ -5,7 +5,6 @@ permalink: /archives/
 ---
 
 <div class="archives-page">
-  <h1>Archives</h1>
   
   <div class="archives-container">
     {% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
@@ -68,14 +67,17 @@ permalink: /archives/
   gap: 20px;
   margin-bottom: 25px;
   padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  background: #161b22;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+  border: 1px solid #444c56;
 }
 
 .archive-post:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  border-color: #4a90e2;
 }
 
 .archive-post-meta {
@@ -85,27 +87,37 @@ permalink: /archives/
 
 .archive-date {
   display: block;
-  color: #999;
+  color: #4a90e2;
   font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   margin-bottom: 5px;
 }
 
 .archive-category {
+  background: #21262d;
+  color: #f0f6fc;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.archive-category:hover {
   background: #4a90e2;
   color: white;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 0.8rem;
 }
 
 .archive-title {
   margin: 0 0 10px 0;
   font-size: 1.2rem;
   line-height: 1.3;
+  font-weight: 700;
 }
 
 .archive-title a {
-  color: #333;
+  color: #f0f6fc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -115,7 +127,7 @@ permalink: /archives/
 }
 
 .archive-excerpt {
-  color: #666;
+  color: rgba(240, 246, 252, 0.9);
   margin: 0;
   line-height: 1.5;
 }

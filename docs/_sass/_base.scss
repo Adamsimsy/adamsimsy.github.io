@@ -8,16 +8,16 @@ $base-line-height: 1.7 !default;
 
 $spacing-unit:     40px !default;
 
-// Modern color palette
-$text-color:       #1a202c !default;
-$background-color: #ffffff !default;
-$brand-color:      #667eea !default;
-$accent-color:     #764ba2 !default;
+// Dark theme color palette inspired by GitHub dark theme
+$text-color:       #E6EDF3 !default;
+$background-color: #0d1117 !default;
+$brand-color:      #4285f4 !default;
+$accent-color:     #52A5FF !default;
 
-$grey-color:       #718096 !default;
-$grey-color-light: #f7fafc !default;
-$grey-color-dark:  #2d3748 !default;
-$grey-color-medium: #e2e8f0 !default;
+$grey-color:       #7d8590 !default;
+$grey-color-light: #161b22 !default;
+$grey-color-dark:  #f0f6fc !default;
+$grey-color-medium: #21262d !default;
 
 $success-color:    #48bb78 !default;
 $warning-color:    #ed8936 !default;
