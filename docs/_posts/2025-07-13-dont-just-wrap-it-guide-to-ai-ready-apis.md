@@ -2,8 +2,10 @@
 layout: post-full-width
 title:  "Don't Just Wrap It: A Strategist's Guide to Architecting APIs for the AI Revolution"
 date:   2025-07-13 12:00:00 +0100
-categories: ai api mcp
+categories: artificial-intelligence
+tags: ai mcp
 thumbnail: /images/api-ai-architecture.png
+excerpt: "Autonomous AI agents are set to become the primary consumers of your APIs. Legacy REST APIs, built for human developers, create a choke point for these new pattern-followers. Simply converting them 1:1 is a critical architectural anti-pattern that leads to systems that are inefficient, unreliable, and expensive."
 ---
 
 <style>
@@ -120,8 +122,6 @@ th {
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
----
 
 ## A New Consumer Has Arrived
 
@@ -333,10 +333,6 @@ The solution is not to convert all APIs, but to identify the correct architectur
 </ol>
 
 </div>
-
----
-
-*Infographic based on the report "Don't Just Wrap It: A Strategist's Guide to Converting REST APIs into AI-Ready MCP Servers".*
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
