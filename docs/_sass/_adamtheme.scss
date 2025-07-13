@@ -353,6 +353,12 @@
   align-items: center;
 }
 
+/* Add margin before and after the .post-meta div inside .blog-post-card .post-header to visually separate it from the title and other elements */
+.blog-post-card .post-header .post-meta {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .read-more {
   color: $brand-color;
   text-decoration: none;
@@ -1180,6 +1186,7 @@
   .post-header {
     padding: 10px 12px 0 12px;
     margin-bottom: 0; // Remove margin to make cards more compact
+    text-align: left; // Override the general post-header center alignment
     
     .post-title {
       margin: 0;
