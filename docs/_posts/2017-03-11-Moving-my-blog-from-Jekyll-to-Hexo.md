@@ -4,6 +4,7 @@ title: "Moving my blog from Jekyll to Hexo"
 date: 2017-03-11 19:08:32
 categories: General
 tags: jekyll hexo github
+thumbnail: /images/Moving-my-blog-from-Jekyll-to-Hexo_newblog.jpg
 ---
 
 For some time I have been meaning to begin blogging about my Sitecore and development experiences to share with the community. 
