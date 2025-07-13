@@ -8,16 +8,16 @@ $base-line-height: 1.7 !default;
 
 $spacing-unit:     40px !default;
 
-// Modern color palette
-$text-color:       #1a202c !default;
-$background-color: #ffffff !default;
-$brand-color:      #667eea !default;
-$accent-color:     #764ba2 !default;
+// Dark theme color palette inspired by Gemini
+$text-color:       #ffffff !default;
+$background-color: #1a1a1a !default;
+$brand-color:      #4285f4 !default;
+$accent-color:     #5fa4fc !default;
 
-$grey-color:       #718096 !default;
-$grey-color-light: #f7fafc !default;
-$grey-color-dark:  #2d3748 !default;
-$grey-color-medium: #e2e8f0 !default;
+$grey-color:       #9ca3af !default;
+$grey-color-light: #2a2a2a !default;
+$grey-color-dark:  #f8fafc !default;
+$grey-color-medium: #3a3a3a !default;
 
 $success-color:    #48bb78 !default;
 $warning-color:    #ed8936 !default;
