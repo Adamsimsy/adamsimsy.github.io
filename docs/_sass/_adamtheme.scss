@@ -827,10 +827,10 @@
   right: 20px;
   width: 280px;
   max-height: calc(100vh - 140px);
-  background: white;
+  background: #161b22;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444c56;
   z-index: 100;
   transition: all 0.3s ease;
   overflow: hidden;
@@ -856,12 +856,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 20px;
-  background: linear-gradient(135deg, $brand-color 0%, $accent-color 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
+  border-bottom: 1px solid #444c56;
   
   h3 {
     margin: 0;
-    color: white;
+    color: #f0f6fc;
     font-size: 16px;
     font-weight: 600;
   }
@@ -870,7 +870,7 @@
 .toc-toggle {
   background: none;
   border: none;
-  color: white;
+  color: #f0f6fc;
   cursor: pointer;
   padding: 4px 8px;
   border-radius: 4px;
@@ -896,7 +896,7 @@
   
   li {
     margin: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #30363d;
     
     &:last-child {
       border-bottom: none;
@@ -907,7 +907,7 @@
 .toc-link {
   display: block;
   padding: 12px 20px;
-  color: $grey-color-dark;
+  color: #e6edf3;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.4;
@@ -915,7 +915,7 @@
   border-left: 3px solid transparent;
   
   .toc-number {
-    color: $brand-color;
+    color: #4a90e2;
     font-weight: 600;
     margin-right: 8px;
     display: inline-block;
@@ -929,37 +929,37 @@
   &.toc-h3 {
     padding-left: 40px;
     font-size: 13px;
-    color: lighten($grey-color-dark, 10%);
+    color: #9ca3af;
     
     .toc-number {
-      color: lighten($brand-color, 15%);
+      color: #6cb6ff;
       font-weight: 500;
       min-width: 30px;
     }
   }
   
   &:hover {
-    background-color: rgba($brand-color, 0.05);
-    color: $brand-color;
+    background-color: rgba(74, 144, 226, 0.1);
+    color: #4a90e2;
     text-decoration: none;
     
     .toc-number {
-      color: $brand-color;
+      color: #4a90e2;
     }
     
     &.toc-h3 {
-      color: $brand-color;
+      color: #4a90e2;
     }
   }
   
   &.active {
-    background-color: rgba($brand-color, 0.1);
-    color: $brand-color;
-    border-left-color: $brand-color;
+    background-color: rgba(74, 144, 226, 0.15);
+    color: #4a90e2;
+    border-left-color: #4a90e2;
     font-weight: 600;
     
     .toc-number {
-      color: $brand-color;
+      color: #4a90e2;
       font-weight: 700;
     }
     
@@ -993,16 +993,16 @@
 }
 
 .toc-list::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .toc-list::-webkit-scrollbar-thumb {
-  background: rgba($brand-color, 0.3);
+  background: rgba(74, 144, 226, 0.3);
   border-radius: 2px;
 }
 
 .toc-list::-webkit-scrollbar-thumb:hover {
-  background: rgba($brand-color, 0.5);
+  background: rgba(74, 144, 226, 0.5);
 }
 
 /* ===========================
