@@ -1534,8 +1534,9 @@
   
   .nav-cards {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 $spacing-unit;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 0 $spacing-unit 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
