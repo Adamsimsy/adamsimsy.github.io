@@ -1308,6 +1308,47 @@
         }
       }
     }
+    
+    .category-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin: 0;
+        
+        a {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          background: $grey-color-medium;
+          color: $text-color;
+          padding: 5px 10px;
+          border-radius: 15px;
+          text-decoration: none;
+          font-size: 0.85rem;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            background: #4a90e2;
+            color: white;
+          }
+          
+          .count {
+            background: rgba(0, 0, 0, 0.1);
+            color: inherit;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
   }
   
   .profile-widget {
