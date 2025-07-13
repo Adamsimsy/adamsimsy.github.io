@@ -4,6 +4,7 @@ title: "Sitecore SC_ANALYTICS_GLOBAL_COOKIE missing"
 date: 2017-11-11 14:00:01
 categories: sitecore
 tags: xdb analytics
+thumbnail: /images/sitecore-sc-global-anaytics-cookie-missing-1.jpg
 ---
 This is an uncommon issue and one that is easy to overlook if you've recently deployed Sitecore into production.
 

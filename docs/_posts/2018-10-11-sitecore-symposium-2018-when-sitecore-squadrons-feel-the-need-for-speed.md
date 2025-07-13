@@ -4,6 +4,7 @@ title: "Sitecore Symposium 2018: When Sitecore Squadrons feel the need for speed
 date: 2018-10-11 22:11:24
 categories: sitecore
 tags: symposium presentations SitecoreSYM
+thumbnail: /images/symposium/symposium-slide.png
 ---
 At this year's Sitecore Symposium 2018 in Florida, I shared the story of how a Sitecore team flew higher than ever before to deliver a robust and rapid to deploy Sitecore platform. This platform, enabled Open Universities Australia to achieve "Best Business ROI Sitecore Experience Award". 
 

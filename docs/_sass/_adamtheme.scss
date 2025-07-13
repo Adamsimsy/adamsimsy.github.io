@@ -1523,3 +1523,150 @@
     }
   }
 }
+
+/**
+ * Post Navigation Cards
+ */
+// Post Navigation - Now separate cards outside main post container
+.post-navigation {
+  margin: 40px 0;
+  padding: 0;
+  
+  .nav-cards {
+    max-width: 1200px;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 0 $spacing-unit 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+    @include media-query($on-tablet) {
+      gap: 20px;
+    }
+    
+    @include media-query($on-palm) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+// Adjust navigation cards when TOC is visible - match main post content width
+@media (min-width: 1400px) {
+  .post-navigation .nav-cards {
+    max-width: calc(1200px - 320px);
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .post {
+    margin-right: 320px;
+  }
+}
+
+.nav-card {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border-color: #4a90e2;
+  }
+  
+  &.nav-spacer {
+    visibility: hidden;
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.nav-card-image {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  background: #0d1117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  @include media-query($on-palm) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.nav-card-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  @include media-query($on-palm) {
+    padding: 16px;
+  }
+}
+
+.nav-card-label {
+  font-size: 0.875rem;
+  color: #4a90e2;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.nav-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #f0f6fc;
+  margin: 0;
+  
+  @include media-query($on-palm) {
+    font-size: 1rem;
+  }
+}
+
+// Responsive adjustments for navigation cards
+@include media-query($on-palm) {
+  .nav-card {
+    a {
+      flex-direction: column;
+    }
+  }
+  
+  .nav-card-image {
+    width: 100%;
+    height: 80px;
+  }
+  
+  .nav-card-content {
+    text-align: center;
+  }
+}
