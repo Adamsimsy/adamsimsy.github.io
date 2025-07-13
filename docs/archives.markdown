@@ -67,7 +67,7 @@ permalink: /archives/
   gap: 20px;
   margin-bottom: 25px;
   padding: 20px;
-  background: #2d333b;
+  background: #161b22;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   transition: all 0.3s ease;
