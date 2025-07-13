@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-heading">{{ site.title | escape }}</h3>
+        <p class="footer-description">{{- site.description | escape -}}</p>
+      </div>
+
+      <div class="footer-section footer-connect">
+        <h3 class="footer-heading">Connect</h3>
+        <ul class="contact-list">
+          {%- if site.email -%}
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- endif -%}
+        </ul>
+        {%- include social.html -%}
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ "now" | date: "%Y" }} {{ site.title | escape }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,46 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <div class="header-content">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        <span class="site-title-text">Owning the Sitecore Experience</span>
+      </a>
+
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger" class="nav-trigger-label">
+          <span class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </label>
+
+        <div class="nav-menu">
+          <a class="nav-link" href="{{ "/" | relative_url }}">Home</a>
+          <a class="nav-link" href="{{ "/archives" | relative_url }}">Archives</a>
+          {%- assign about_page = site.pages | where: "path", "about.markdown" | first -%}
+          {%- if about_page -%}
+            <a class="nav-link" href="{{ about_page.url | relative_url }}">About</a>
+          {%- else -%}
+            <a class="nav-link" href="{{ "/about" | relative_url }}">About</a>
+          {%- endif -%}
+        </div>
+      </nav>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search" class="search-input" />
+        <button type="submit" class="search-button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+      </div>
+
+      <a href="{{ "/search" | relative_url }}" class="mobile-search-link" style="display: none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>

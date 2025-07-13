@@ -1,0 +1,1 @@
+When converting Hexo codeblock, use highlight format and infer the language to suffix after the opening highlight tag.
