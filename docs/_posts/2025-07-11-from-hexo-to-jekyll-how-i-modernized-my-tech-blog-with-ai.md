@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "From Hexo to Jekyll: How I Modernized My Tech Blog with AI"
-date:   2025-07-13 00:00:01 +0100
+date:   2025-07-11 00:00:01 +0100
 categories: jekyll
 thumbnail: /images/hexo-to-jekyll.png
 ---

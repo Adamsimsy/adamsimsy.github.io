@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<article class="post post-full-width">
+  <div class="post-container-full-width">
+    <header class="post-header">
+      <div class="post-meta-info">
+        <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+          {%- assign date_format = site.adamtheme.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          <span class="post-author">by {{ page.author }}</span>
+        {%- endif -%}
+      </div>
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    </footer>
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+</article>
+
+<!-- Post Navigation Cards - Full width version -->
+{%- if page.previous or page.next -%}
+  <div class="post-navigation post-navigation-full-width">
+    <div class="nav-cards">
+      {%- if page.previous -%}
+        <div class="nav-card nav-prev">
+          <a href="{{ page.previous.url | relative_url }}">
+            {%- if page.previous.thumbnail -%}
+              <div class="nav-card-image">
+                <img src="{{ page.previous.thumbnail | relative_url }}" alt="{{ page.previous.title | escape }}" />
+              </div>
+            {%- else -%}
+              <div class="nav-card-image">
+                <img src="/images/code.svg" alt="{{ page.previous.title | escape }}" />
+              </div>
+            {%- endif -%}
+            <div class="nav-card-content">
+              <span class="nav-card-label">Previous</span>
+              <h3 class="nav-card-title">{{ page.previous.title | escape }}</h3>
+            </div>
+          </a>
+        </div>
+      {%- else -%}
+        <div class="nav-card nav-spacer"></div>
+      {%- endif -%}
+      
+      {%- if page.next -%}
+        <div class="nav-card nav-next">
+          <a href="{{ page.next.url | relative_url }}">
+            {%- if page.next.thumbnail -%}
+              <div class="nav-card-image">
+                <img src="{{ page.next.thumbnail | relative_url }}" alt="{{ page.next.title | escape }}" />
+              </div>
+            {%- else -%}
+              <div class="nav-card-image">
+                <img src="/images/code.svg" alt="{{ page.next.title | escape }}" />
+              </div>
+            {%- endif -%}
+            <div class="nav-card-content">
+              <span class="nav-card-label">Next</span>
+              <h3 class="nav-card-title">{{ page.next.title | escape }}</h3>
+            </div>
+          </a>
+        </div>
+      {%- else -%}
+        <div class="nav-card nav-spacer"></div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
