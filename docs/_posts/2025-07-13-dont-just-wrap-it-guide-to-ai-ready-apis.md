@@ -4,7 +4,7 @@ title:  "Don't Just Wrap It: A Strategist's Guide to Architecting APIs for the A
 date:   2025-07-13 12:00:00 +0100
 categories: artificial-intelligence
 tags: ai mcp
-thumbnail: /images/api-ai-architecture.png
+thumbnail: /images/thumbnails/2025-07-13-dont-just-wrap-it-guide-to-ai-ready-apis.png
 excerpt: "Autonomous AI agents are set to become the primary consumers of your APIs. Legacy REST APIs, built for human developers, create a choke point for these new pattern-followers. Simply converting them 1:1 is a critical architectural anti-pattern that leads to systems that are inefficient, unreliable, and expensive."
 ---
 
