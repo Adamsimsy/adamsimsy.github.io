@@ -1,8 +1,8 @@
-When asked to generate post, you need to create a new Jekyll blog post using the source content [content.html](docs\post-source\content.html) file.
+When asked to generate post, you need to create a new Jekyll blog post using the source content [content.html](../../docs/post-source/content.html) file.
 
 Also to make sure that any functional or interactive parts of the source content page remain, you can Navigate to the page using #playwright MCP with the URL http://127.0.0.1:4000/post-source/content.html
 
-Create the new post using [2025-07-13-post-template.md](docs/_drafts/2025-07-13-post-template.md) as a template.
+Create the new post using [2025-07-13-post-template.md](../../docs/_drafts/2025-07-13-post-template.md) as a template.
 
 Place the post in the _drafts folder.
 
