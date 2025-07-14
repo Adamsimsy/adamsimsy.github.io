@@ -10,6 +10,8 @@ I've decided it's time to bring my website back to life. My goal is to create a 
 
 It’s been several years since I last updated my blog. When I dusted off the digital cobwebs, I discovered it was running on an old engine called Hexo. It appeared to be no longer actively maintained, or at least hadn't been updated in some time. This prompted me to make a change. I decided to pivot back to Jekyll, a tool I’ve used in the past and which remains the go-to choice for creating blog posts on GitHub Pages. Interestingly, I even found an old post of mine about converting from Jekyll to Hexo – and now I was reversing the process!
 
+![Hexo to Jekyll](/images/hexo-to-jekyll.png)
+
 To migrate from Hexo back to Jekyll, I turned to AI. This saved me an immense amount of time. Instead of wading through pages of documentation, I used a series of prompts to handle the entire conversion process.
 
 I started by using AI with Playwright to analyze my previously published website. It took that information and applied it to a clean Jekyll installation, recreating my original theme. This meant the AI looked at my old site's design and then built a custom theme within Jekyll to match it.
