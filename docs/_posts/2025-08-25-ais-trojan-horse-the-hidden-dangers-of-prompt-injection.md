@@ -2,7 +2,7 @@
 layout: post
 title:  "AI's Trojan Horse: The Hidden Dangers of Prompt Injection"
 date:   2025-08-25 00:00:01 +0100
-categories: jekyll
+categories: artificial-intelligence security
 thumbnail: /images/ais-trojan-horse-prompt-injection.png
 ---
 
